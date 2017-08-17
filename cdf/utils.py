@@ -5,4 +5,4 @@ def get_major_dot_minor_version(version):
 
     For example, (1, 9, 3, 'final', 0) will result in '1.9'
     """
-    return '.'.join(version.split('.')[:2])
+    return '.'.join([str(v) for v in version[:2]])
