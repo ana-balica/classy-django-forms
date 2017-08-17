@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 def main():
-    print "index generator"
+    print('index generator')
 
 
 if __name__ == '__main__':

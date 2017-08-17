@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 def main():
-    print 'compile static'
+    print('compile static')
 
 
 if __name__ == '__main__':
