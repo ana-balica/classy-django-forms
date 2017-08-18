@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block title %}{{ name }}{% endblock %}
+
+{% block metatags %}
+    <meta name="description" content="Detailed descriptions, with full methods and attributes of {{ name }} Django REST Framework class.">
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        // Activate accordion
+        $(function () {
+            $(".collapse").collapse();
+            // Method collapsing/expanding buttons
+            $("#collapse-methods-btn").click(function() {
+                CCBV.method_list.collapse();
+            });
+            $("#expand-methods-btn").click(function() {
+                CCBV.method_list.expand();
+            });
+
+            function goToAnchor() {
+              var anchor = window.location.hash.replace("#", "");
+              $(".collapse").collapse('hide');
+              if (anchor) {
+                $("#" + anchor).collapse('show');
+                $('#' + anchor + ' .collapse').collapse('show');
+                setTimeout(function(){
+                  console.log($('#' + anchor).attr('class'));
+                  $('html, body').animate({
+                    scrollTop: $('#' + anchor).offset().top - 70
+                  }, 0);
+                }, 500);
+              }
+            }
+
+            $(document).ready(function() {
+              goToAnchor();
+
+              window.addEventListener("hashchange", function() { goToAnchor(); });
+
+            });
+        });
+    </script>
+    <script src="/static/ccbv.js"></script>
+{% endblock %}
+
+
+{% block page_header %}
+    <h1><small>class</small>&nbsp;{{ name }}</h1>
+    <pre>from {{ this_module }} import {{ name }}</pre>
+    <div class="pull-right">
+        {% if get_doc_link(this_klass) %}
+        <a class="btn btn-small btn-info" href="{{ get_doc_link(this_klass) }}">Documentation</a>
+        {% else %}
+        <span class="btn btn-small btn-info disabled">Documentation</span>
+        {% endif %}
+        <a class="btn btn-small btn-info" href="{{ get_src_link(this_klass) }}">Source code</a>
+    </div>
+    {% if this_klass.__doc__ %}
+        <pre class="docstring">{{ this_klass.__doc__ }}</pre>
+    {% endif %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="span12">
+        <div class="row">
+            {% for ancestor in ancestors %}
+                {% if loop.first %}
+                    <div class="span4">
+                    <h2>Ancestors (<abbr title="Method Resolution Order">MRO</abbr>)</h2>
+                    <ol start='0' id="ancestors">
+                    <li><strong>{{ name }}</strong></li>
+                {% else %}
+                <li>
+                    <a href="{{ get_klass_url(ancestor) }}" class="{% if ancestor in direct_ancestors %}direct{% endif %}">
+                        {{ ancestor.__name__ }}
+                    </a>
+                </li>
+                {% endif %}
+                {% if loop.last %}</ol></div>{% endif %}
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% for child in children %}
+                {% if loop.first %}
+                <div class="span4" id="descendants">
+                <h2>Descendants</h2>
+                <ul class="unstyled">
+                {% endif %}
+                    <li><a href="{{ get_klass_url(child) }}">{{ child.__name__ }}</a></li>
+                {% if loop.last %}</ul></div>{% endif %}
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% for attribute in attributes %}
+                {% if loop.first %}
+                    <div class="span12">
+                        <h2>Attributes</h2>
+                        <table class="table table-striped table-bordered table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Defined in</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                {% endif %}
+                            <tr>
+                                <td>
+                                    <code class="attribute{%if attribute.overridden %} overridden{% endif %}">
+                                        <strong>{{ attribute.name }}</strong> = {{ attribute.value|e }}
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    {% if attribute.classobject == this_klass %}
+                                        {{ this_klass.__name__ }}
+                                    {% else %}
+                                        <a href="{{ get_klass_url(attribute.classobject) }}">{{ attribute.classobject.__name__ }}</a>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                {% if loop.last %}
+                        </tbody>
+                    </table>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="row">
+          {% for method in unavailable_methods %}
+              {% if loop.first %}
+              <div class="span12" id="unused-methods">
+              <h2>Methods used but not implemented in this class</h2>
+              <ul class="unstyled">
+              {% endif %}
+                  <li><strong>{{method}}</strong></li>
+              {% if loop.last %}</ul></div>{% endif %}
+          {% endfor %}
+        </div>
+        <div class="row">
+            {% for method in methods %}
+                {% if loop.first %}
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                    <h2>Methods</h2>
+                {% endif %}
+                {% if previous_name != method.name %}
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#{{ method.name }}">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">{{ method.name }}</span>(<span class="n">{{ method.params_string() }}</span>):
+                                </code>
+                                 <a class="headerlink" href="#{{ method.name }}" title="Permalink to this method">¶</a>
+                                {% if method.children|length == 0 %}
+                                    <small class="pull-right">{{ method.classobject.__name__ }}</small>
+                                {% endif %}
+                            </h3>
+                        </header>
+                        <div id="{{ method.name }}" class="accordion-body collapse in">
+                            {% for child in [method] + method.children %}
+                                {% if method.children|length != 0 %}
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#{{ child.name }}-{{ child.classobject.__name__ }}">
+                                            <h4 class="accordion-toggle">{{ child.classobject.__name__ }}</h4>
+                                        </header>
+                                        <div id="{{ child.name }}-{{ child.classobject.__name__ }}" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                {% endif %}
+                                                {% if child.value.__doc__ %}<pre class="docstring">{{ child.value.__doc__ }}</pre>{% endif %}
+                                                {{ child.code() }}
+                                               {#  {% pygmy namesake.code linenos='True' linenostart=namesake.line_number lexer='python' %} #}
+                                {% if method.children|length != 0 %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+                {% if loop.last %}</div>{% endif %}
+                {% set previous_name=method.name %}
+            {% endfor %}
+        </div>
+
+    </div>
+{% endblock %}

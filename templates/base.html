@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Django Forms Inspector{% endblock %} -- Classy Django Forms</title>
+    {% block metatags %}<meta name="description" content="The best way to understand Django forms, form fields, form widgets and ____">{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="google-site-verification" content="qouob3hX67Bv8TpnZJzMsxaDQZP0mVk-Jv2fV9gX93s" /> -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles from Twitter Bootstrap-->
+    <link href="/static/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/manni.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/jquery-1.7.1.min.js"><\/script>');</script>
+    <script src="/static/bootstrap-collapse.js"></script>
+    <script src="/static/modernizr-2.5.3.min.js"></script>
+    <script src="/static/bootstrap-dropdowns.js"></script>
+    <script>$('.dropdown-toggle').dropdown()</script>
+
+    {% block extraheaders %}{% endblock %}
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">cdrf.co</a>
+                <ul class="nav">
+
+                {% block nav %}
+
+                <li li="version-{{ version }}" class="dropdown">
+                    {% if not other_versions %}
+                        <a href="#">{{ version_prefix }} {{ version }}</a>
+                    {% else %}
+                        <a href="#version-{{ version }}" class="dropdown-toggle" data-toggle="dropdown">
+                            {{ version_prefix }} {{ version }} <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% for v in other_versions %}
+                                <li>
+                                    <a href="{{ get_version_url(v) }}">{{ v }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+
+                <li class="divider-vertical"></li>
+                {% for klass in klasses %}
+                    {% if current_module != klass.__module__ or loop.first %}
+                        {% if not loop.first %}</ul></li>{% endif %}
+                        {% set module_short_name = klass.__module__.split('.')[-1] %}
+                        <li id="module-{{ module_short_name }}" class="dropdown{% if klass.__module__ == this_module %} active{% endif %}">
+                        <a href="#module-{{ module_short_name }}" class="dropdown-toggle" data-toggle="dropdown">
+                            {{ module_short_name|title }} <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                    {% endif %}
+                    <li {% if klass == this_klass %}class=" active"{% endif %}>
+                        <a href="{{ get_klass_url(klass) }}">{{ klass.__name__ }}</a>
+                    </li>
+                    {% set current_module = klass.__module__ %}
+                {% endfor %}
+                </ul></li>
+                {% endblock nav %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <article id="main">
+            {% block page_header %}{% endblock %}
+            <div class="row">{% block content %}{% endblock %}</div>
+        </article>
+        {% block footer %}
+            <footer>
+                <hr />
+                <p>Built by <a href="http://twitter.com/anabalica" target="_blank">@anabalica</a>.</p>
+
+                <p><a href="http://github.com/anabalica/classy-django-forms/">Source code</a> and
+                <a href="https://github.com/vintasoftware/classy-django-forms/graphs/contributors">Contributors</a>
+                on <a href="http://github.com/">GitHub</a>.</p>
+
+                <p>Based on <a href="http://ccbv.co.uk/">Django Classy Class-Based Views</a> and <a href="http://www.cdrf.co/">Classy Django Rest Framework</a>.</p>
+            </footer>
+        {% endblock %}
+    </div> <!-- /container -->
+    <script type="text/javascript">$('.dropdown-toggle').dropdown()</script>
+    {% block extra_js %}{% endblock %}
+    
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     // ga('create', 'UA-62227446-1', 'auto');
+     // ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
