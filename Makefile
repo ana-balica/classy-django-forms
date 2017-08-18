@@ -2,7 +2,7 @@ PUBLIC_FOLDER = ./public
 
 
 runserver:
-	@cd $(PUBLIC_FOLDER) && python -m SimpleHTTPServer
+	@cd $(PUBLIC_FOLDER) && python -m http.server
 
 .PHONY=clean
 clean:
