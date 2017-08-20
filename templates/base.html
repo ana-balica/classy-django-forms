@@ -31,7 +31,7 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand" href="/">cdrf.co</a>
+                <a class="brand" href="/">cdf</a>
                 <ul class="nav">
 
                 {% block nav %}
@@ -46,7 +46,8 @@
                         <ul class="dropdown-menu">
                             {% for v in other_versions %}
                                 <li>
-                                    <a href="{{ get_version_url(v) }}">{{ v }}</a>
+                                    <a href="#">{{ v }}</a>
+                                    {# <a href="{{ get_version_url(v) }}">{{ v }}</a> #}
                                 </li>
                             {% endfor %}
                         </ul>
@@ -54,20 +55,23 @@
                 </li>
 
                 <li class="divider-vertical"></li>
-                {% for klass in klasses %}
-                    {% if current_module != klass.__module__ or loop.first %}
+                {% for module, klass_names in klasses.items() %}
+                    {% if current_module != module or loop.first %}
                         {% if not loop.first %}</ul></li>{% endif %}
-                        {% set module_short_name = klass.__module__.split('.')[-1] %}
+                        {% set module_short_name = module.split('.')[-1] %}
                         <li id="module-{{ module_short_name }}" class="dropdown{% if klass.__module__ == this_module %} active{% endif %}">
-                        <a href="#module-{{ module_short_name }}" class="dropdown-toggle" data-toggle="dropdown">
-                            {{ module_short_name|title }} <b class="caret"></b>
-                        </a>
+                            <a href="#module-{{ module_short_name }}" class="dropdown-toggle" data-toggle="dropdown">
+                                {{ module_short_name|title }} <b class="caret"></b>
+                            </a>
                         <ul class="dropdown-menu">
                     {% endif %}
-                    <li {% if klass == this_klass %}class=" active"{% endif %}>
-                        <a href="{{ get_klass_url(klass) }}">{{ klass.__name__ }}</a>
-                    </li>
-                    {% set current_module = klass.__module__ %}
+                    {% for klass_name in klass_names %}
+                        <li {% if klass_name == this_klass %}class=" active"{% endif %}>
+                            <a href="#">{{ klass_name }}</a>
+                            {# <a href="{{ get_klass_url(klass) }}">{{ klass.__name__ }}</a> #}
+                        </li>
+                    {% endfor %}
+                    {% set current_module = module %}
                 {% endfor %}
                 </ul></li>
                 {% endblock nav %}
@@ -77,8 +81,8 @@
     </div>
     <div class="container">
         <article id="main">
-            {% block page_header %}{% endblock %}
-            <div class="row">{% block content %}{% endblock %}</div>
+            {# {% block page_header %}{% endblock %} #}
+            {# <div class="row">{% block content %}{% endblock %}</div> #}
         </article>
         {% block footer %}
             <footer>
