@@ -81,8 +81,8 @@
     </div>
     <div class="container">
         <article id="main">
-            {# {% block page_header %}{% endblock %} #}
-            {# <div class="row">{% block content %}{% endblock %}</div> #}
+            {% block page_header %}{% endblock %}
+            <div class="row">{% block content %}{% endblock %}</div>
         </article>
         {% block footer %}
             <footer>
