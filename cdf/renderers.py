@@ -2,13 +2,13 @@ from cdf.config import DJANGO_VERSIONS, VERSION
 from cdf.jinja_utils import template_env
 
 
-class BasePageRenderer(object):
+class BasicPageRenderer(object):
 
     def __init__(self, klasses):
         self.klasses = klasses
 
-    def render(self, filename):
-        template = template_env.get_template(self.template_name)
+    def render(self, template_name, filename):
+        template = template_env.get_template(template_name)
         context = self.get_context()
         rendered_template = template.render(context)
         with open(filename, 'w') as f:
@@ -26,5 +26,3 @@ class BasePageRenderer(object):
         }
 
 
-class IndexPageRenderer(BasePageRenderer):
-    template_name = 'index.html'

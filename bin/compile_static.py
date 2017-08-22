@@ -4,7 +4,7 @@ import os
 from cdf.config import DJANGO_VERSIONS, VERSION
 from cdf.inspector import get_klasses
 from cdf.renderers import (
-    IndexPageRenderer,
+    BasicPageRenderer,
 )
 
 
@@ -20,6 +20,13 @@ def main():
     index_path = os.path.join(out_folder, VERSION, 'index.html')
     renderer.render(index_path)
 
+    renderer = BasicPageRenderer(klasses)
+    index_version_path = os.path.join(out_folder, VERSION, 'index.html')
+    renderer.render('index.html', index_version_path)
+
+    if VERSION == DJANGO_VERSIONS[-1]:
+        index_path = os.path.join(out_folder, 'index.html')
+        renderer.render('index.html', index_path)
 
 if __name__ == '__main__':
     main()
