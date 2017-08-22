@@ -27,6 +27,8 @@ def main():
     if VERSION == DJANGO_VERSIONS[-1]:
         index_path = os.path.join(out_folder, 'index.html')
         renderer.render('index.html', index_path)
+        not_found_path = os.path.join(out_folder, '404.html')
+        renderer.render('404.html', not_found_path)
 
 if __name__ == '__main__':
     main()
