@@ -5,15 +5,15 @@ def get_klasses():
     """
     Get all the public classes from the Django modules of interest within forms.
 
-    :returns: dict of the form {'module_name': ['classA', 'classB', 'classC']}
+    :returns: dict of the form {module: [classA, classB, classC]}
     """
     # TODO: update the list of modules
     modules = [forms.fields, forms.widgets]
     klasses = {}
 
     for module in modules:
-        module_name = module.__name__
-        klasses[module_name] = []
+        klasses[module] = []
         for klass_name in module.__all__:
-            klasses[module_name].append(klass_name)
+            klass = getattr(module, klass_name)
+            klasses[module].append(klass)
     return klasses
