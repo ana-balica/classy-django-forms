@@ -1,19 +1,19 @@
 <div class="span{{ column_width }}">
-    {% for module, klass_names in klasses.items() %}
-        {% if current_module !=  module  or loop.first %}
+    {% for module, klasses in klasses.items() %}
+        {% if current_module !=  module or loop.first %}
             {% if not loop.first %}</ul></div>{% endif %}
-            {% set module_short_name = module.split('.')[-1] %}
+            {% set module_short_name = module.__name__.split('.')[-1] %}
             {# {% if module_short_name == 'serializers' %}</div><div class="span{{ column_width }}">{% endif %} #}
             <div class="well skinny klass-list">
             <ul class="nav nav-list">
             <li class="nav-header"><h3>{{ module_short_name }}</h3></li>
             {% set current_module = module %}
         {% endif %}
-        {% for klass_name in klass_names %}
+        {% for klass in klasses %}
             <li class="primary">
                 {# <a href="{{ get_klass_url(klass) }}" {% if get_klass_docs(klass) %}class="klass-tooltip" data-original-title="{{ get_klass_docs(klass) }}" data-placement="bottom"{% endif %}> #}
                 <a href="#">
-                    {{ klass_name }}
+                    {{ klass.__name__ }}
                 </a>
             </li>
         {% endfor %}
