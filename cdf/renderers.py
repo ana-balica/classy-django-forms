@@ -3,7 +3,7 @@ from cdf.inspector import Inspector
 from cdf.jinja_utils import template_env
 
 
-class BasicPageRenderer(object):
+class BasicPageRenderer:
 
     def __init__(self, klasses):
         self.klasses = klasses
