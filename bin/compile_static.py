@@ -9,18 +9,18 @@ from cdf.renderers import (
 
 
 def main():
-    klasses = get_klasses()
+    klasses_by_module = get_klasses()
 
     out_folder = 'public'
-    for module, _ in klasses.items():
-        target_path = os.path.join(out_folder, VERSION, module)
+    for module, klasses in klasses_by_module.items():
+        target_path = os.path.join(out_folder, VERSION, module.__name__)
         os.makedirs(target_path, exist_ok=True)
 
     renderer = IndexPageRenderer(klasses)
     index_path = os.path.join(out_folder, VERSION, 'index.html')
     renderer.render(index_path)
 
-    renderer = BasicPageRenderer(klasses)
+    renderer = BasicPageRenderer(klasses_by_module)
     index_version_path = os.path.join(out_folder, VERSION, 'index.html')
     renderer.render('index.html', index_version_path)
 
