@@ -5,6 +5,7 @@ from cdf.config import DJANGO_VERSIONS, VERSION
 from cdf.inspector import get_klasses
 from cdf.renderers import (
     BasicPageRenderer,
+    DetailsPageRenderer,
 )
 
 
@@ -16,9 +17,10 @@ def main():
         target_path = os.path.join(out_folder, VERSION, module.__name__)
         os.makedirs(target_path, exist_ok=True)
 
-    renderer = IndexPageRenderer(klasses)
-    index_path = os.path.join(out_folder, VERSION, 'index.html')
-    renderer.render(index_path)
+        for klass in klasses:
+            renderer = DetailsPageRenderer(klasses_by_module, klass)
+            details_path = os.path.join(out_folder, VERSION, module.__name__, klass.__name__ + '.html')
+            renderer.render('details.html', details_path)
 
     renderer = BasicPageRenderer(klasses_by_module)
     index_version_path = os.path.join(out_folder, VERSION, 'index.html')
