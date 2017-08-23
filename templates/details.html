@@ -3,7 +3,7 @@
 {% block title %}{{ name }}{% endblock %}
 
 {% block metatags %}
-    <meta name="description" content="Detailed descriptions, with full methods and attributes of {{ name }} Django REST Framework class.">
+    <meta name="description" content="Detailed descriptions, with full methods and attributes of {{ name }} Django class.">
 {% endblock %}
 
 {% block extra_js %}
@@ -47,15 +47,16 @@
 
 
 {% block page_header %}
-    <h1><small>class</small>&nbsp;{{ name }}</h1>
-    <pre>from {{ this_module }} import {{ name }}</pre>
+    <h1><small>class</small>&nbsp;{{ this_klass_name }}</h1>
+    <pre>from {{ this_klass.__module__ }} import {{ this_klass_name }}</pre>
     <div class="pull-right">
-        {% if get_doc_link(this_klass) %}
-        <a class="btn btn-small btn-info" href="{{ get_doc_link(this_klass) }}">Documentation</a>
-        {% else %}
+        {# {% if get_doc_link(this_klass) %} #}
+        {# <a class="btn btn-small btn-info" href="{{ get_doc_link(this_klass) }}">Documentation</a> #}
+        {# {% else %} #}
         <span class="btn btn-small btn-info disabled">Documentation</span>
-        {% endif %}
-        <a class="btn btn-small btn-info" href="{{ get_src_link(this_klass) }}">Source code</a>
+        {# {% endif %} #}
+        {# <a class="btn btn-small btn-info" href="{{ get_src_link(this_klass) }}">Source code</a> #}
+        <a class="btn btn-small btn-info" href="#">Source code</a>
     </div>
     {% if this_klass.__doc__ %}
         <pre class="docstring">{{ this_klass.__doc__ }}</pre>
@@ -71,10 +72,11 @@
                     <div class="span4">
                     <h2>Ancestors (<abbr title="Method Resolution Order">MRO</abbr>)</h2>
                     <ol start='0' id="ancestors">
-                    <li><strong>{{ name }}</strong></li>
+                    <li><strong>{{ this_klass_name }}</strong></li>
                 {% else %}
                 <li>
-                    <a href="{{ get_klass_url(ancestor) }}" class="{% if ancestor in direct_ancestors %}direct{% endif %}">
+                    {# <a href="{{ get_klass_url(ancestor) }}" class="{% if ancestor in direct_ancestors %}direct{% endif %}"> #}
+                    <a href="#" class="{% if ancestor in direct_ancestors %}direct{% endif %}">
                         {{ ancestor.__name__ }}
                     </a>
                 </li>
@@ -83,13 +85,14 @@
             {% endfor %}
         </div>
         <div class="row">
-            {% for child in children %}
+            {% for descendant in descendants %}
                 {% if loop.first %}
                 <div class="span4" id="descendants">
                 <h2>Descendants</h2>
                 <ul class="unstyled">
                 {% endif %}
-                    <li><a href="{{ get_klass_url(child) }}">{{ child.__name__ }}</a></li>
+                    {# <li><a href="{{ get_klass_url(child) }}">{{ descendant.__name__ }}</a></li> #}
+                    <li><a href="#">{{ descendant.__name__ }}</a></li>
                 {% if loop.last %}</ul></div>{% endif %}
             {% endfor %}
         </div>
@@ -115,9 +118,10 @@
                                 </td>
                                 <td style="min-width:100px">
                                     {% if attribute.classobject == this_klass %}
-                                        {{ this_klass.__name__ }}
+                                        {{ this_klass_name }}
                                     {% else %}
-                                        <a href="{{ get_klass_url(attribute.classobject) }}">{{ attribute.classobject.__name__ }}</a>
+                                        {# <a href="{{ get_klass_url(attribute.classobject) }}">{{ attribute.classobject.__name__ }}</a> #}
+                                        <a href="#">{{ attribute.classobject.__name__ }}</a>
                                     {% endif %}
                                 </td>
                             </tr>
