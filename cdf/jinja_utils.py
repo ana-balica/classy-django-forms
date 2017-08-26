@@ -28,5 +28,13 @@ def get_version_url(context, version):
     return os.path.join('/', version, 'index.html')
 
 
+@contextfunction
+def get_klass_docs(context, klass):
+    if klass.__doc__ and klass.__doc__.strip():
+        return klass.__doc__.strip()
+    return ''
+
+
 template_env.globals['get_klass_url'] = get_klass_url
 template_env.globals['get_version_url'] = get_version_url
+template_env.globals['get_klass_docs'] = get_klass_docs
