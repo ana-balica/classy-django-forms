@@ -46,8 +46,7 @@
                         <ul class="dropdown-menu">
                             {% for v in other_versions %}
                                 <li>
-                                    <a href="#">{{ v }}</a>
-                                    {# <a href="{{ get_version_url(v) }}">{{ v }}</a> #}
+                                    <a href="{{ get_version_url(v) }}">{{ v }}</a>
                                 </li>
                             {% endfor %}
                         </ul>
