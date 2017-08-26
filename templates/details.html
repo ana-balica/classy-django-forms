@@ -109,7 +109,9 @@
                 {% endif %}
                             <tr>
                                 <td>
-                                    <code class="attribute{%if attribute.overridden %} overridden{% endif %}">
+                                    {# For now we are not detecting that an attr was overridden #}
+                                    {# <code class="attribute{%if attribute.overridden %} overridden{% endif %}"> #}
+                                    <code class="attribute">
                                         <strong>{{ attribute.name }}</strong> = {{ attribute.value|e }}
                                     </code>
                                 </td>
