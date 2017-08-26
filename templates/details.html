@@ -55,8 +55,7 @@
         {% else %}
             <span class="btn btn-small btn-info disabled">Documentation</span>
         {% endif %}
-        {# <a class="btn btn-small btn-info" href="{{ get_src_link(this_klass) }}">Source code</a> #}
-        <a class="btn btn-small btn-info" href="#">Source code</a>
+        <a class="btn btn-small btn-info" href="{{ get_src_link(this_klass) }}" target="_blank">Source code</a>
     </div>
     {% if this_klass.__doc__ %}
         <pre class="docstring">{{ this_klass.__doc__ }}</pre>

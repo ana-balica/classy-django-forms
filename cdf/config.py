@@ -12,4 +12,3 @@ DJANGO_VERSIONS = [
 
 
 VERSION = get_major_dot_minor_version(django_version)
-EXACT_VERSION = django_version

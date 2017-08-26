@@ -1,3 +1,4 @@
+import inspect
 import os
 
 from jinja2 import (
@@ -7,7 +8,8 @@ from jinja2 import (
     FileSystemLoader,
 )
 
-from cdf.config import VERSION, EXACT_VERSION
+from cdf.config import VERSION
+from cdf.utils import get_module_short_name
 
 
 template_env = Environment(
@@ -38,11 +40,22 @@ def get_klass_docs(context, klass):
 @contextfunction
 def get_doc_link(context, klass, version=VERSION):
     base_url = 'https://docs.djangoproject.com/en/{version}/ref/forms/{module}/#{klass}'
-    short_module = klass.__module__.rsplit('.', 1)[-1]
     return base_url.format(
         version=version,
-        module=short_module,
+        module=get_module_short_name(klass),
         klass=klass.__name__.lower()
+    )
+
+
+@contextfunction
+def get_src_link(context, klass, version=VERSION):
+    src_url = "https://github.com/django/django/blob/stable/{version}.x/django/forms/{module}.py#L{lineno}"
+    local_path = inspect.getsourcefile(klass)
+    lineno = inspect.getsourcelines(klass)[-1]
+    return src_url.format(
+        version=version,
+        module=get_module_short_name(klass),
+        lineno=lineno
     )
 
 
@@ -50,3 +63,4 @@ template_env.globals['get_klass_url'] = get_klass_url
 template_env.globals['get_version_url'] = get_version_url
 template_env.globals['get_klass_docs'] = get_klass_docs
 template_env.globals['get_doc_link'] = get_doc_link
+template_env.globals['get_src_link'] = get_src_link
