@@ -50,11 +50,11 @@
     <h1><small>class</small>&nbsp;{{ this_klass_name }}</h1>
     <pre>from {{ this_klass.__module__ }} import {{ this_klass_name }}</pre>
     <div class="pull-right">
-        {# {% if get_doc_link(this_klass) %} #}
-        {# <a class="btn btn-small btn-info" href="{{ get_doc_link(this_klass) }}">Documentation</a> #}
-        {# {% else %} #}
-        <span class="btn btn-small btn-info disabled">Documentation</span>
-        {# {% endif %} #}
+        {% if get_doc_link(this_klass) %}
+            <a class="btn btn-small btn-info" href="{{ get_doc_link(this_klass) }}" target="_blank">Documentation</a>
+        {% else %}
+            <span class="btn btn-small btn-info disabled">Documentation</span>
+        {% endif %}
         {# <a class="btn btn-small btn-info" href="{{ get_src_link(this_klass) }}">Source code</a> #}
         <a class="btn btn-small btn-info" href="#">Source code</a>
     </div>
