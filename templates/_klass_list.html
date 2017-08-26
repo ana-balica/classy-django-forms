@@ -12,7 +12,7 @@
         {% for klass in klasses %}
             <li class="primary">
                 {# <a href="{{ get_klass_url(klass) }}" {% if get_klass_docs(klass) %}class="klass-tooltip" data-original-title="{{ get_klass_docs(klass) }}" data-placement="bottom"{% endif %}> #}
-                <a href="#">
+                <a href="{{ get_klass_url(klass) }}">
                     {{ klass.__name__ }}
                 </a>
             </li>

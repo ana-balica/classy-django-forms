@@ -75,8 +75,7 @@
                     <li><strong>{{ this_klass_name }}</strong></li>
                 {% else %}
                 <li>
-                    {# <a href="{{ get_klass_url(ancestor) }}" class="{% if ancestor in direct_ancestors %}direct{% endif %}"> #}
-                    <a href="#" class="{% if ancestor in direct_ancestors %}direct{% endif %}">
+                    <a href="{{ get_klass_url(ancestor) }}" class="{% if ancestor in direct_ancestors %}direct{% endif %}">
                         {{ ancestor.__name__ }}
                     </a>
                 </li>
@@ -91,8 +90,7 @@
                 <h2>Descendants</h2>
                 <ul class="unstyled">
                 {% endif %}
-                    {# <li><a href="{{ get_klass_url(child) }}">{{ descendant.__name__ }}</a></li> #}
-                    <li><a href="#">{{ descendant.__name__ }}</a></li>
+                    <li><a href="{{ get_klass_url(descendant) }}">{{ descendant.__name__ }}</a></li>
                 {% if loop.last %}</ul></div>{% endif %}
             {% endfor %}
         </div>

@@ -67,8 +67,7 @@
                     {% endif %}
                     {% for klass in klasses %}
                         <li {% if this_klass == klass %}class=" active"{% endif %}>
-                            <a href="#">{{ klass.__name__ }}</a>
-                            {# <a href="{{ get_klass_url(klass) }}">{{ klass.__name__ }}</a> #}
+                            <a href="{{ get_klass_url(klass) }}">{{ klass.__name__ }}</a>
                         </li>
                     {% endfor %}
                     {% set current_module = module %}
