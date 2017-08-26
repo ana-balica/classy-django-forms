@@ -1,4 +1,3 @@
-import types
 import json
 
 from django import forms
@@ -20,6 +19,21 @@ def get_klasses():
             klass = getattr(module, klass_name)
             klasses[module].append(klass)
     return klasses
+
+
+class Attribute:
+    def __init__(self, name, value, classobject, instance_class):
+        self.name = name
+        self.value = value
+        self.classobject = classobject
+        self.instance_class = instance_class
+        self.dirty = False
+
+    def __eq__(self, obj):
+        return self.name == obj.name and self.value == obj.value
+
+    def __neq__(self, obj):
+        return not self.__eq__(obj)
 
 
 class Inspector:
@@ -53,6 +67,29 @@ class Inspector:
                 if klass != self.klass and issubclass(klass, self.klass):
                     descendants.append(klass)
         return descendants
+
+    def get_attributes(self):
+        """
+        Get all class attributes (including the ones from the base classes),
+        excluding the dunder attributes, methods and properties.
+        """
+        attrs = []
+
+        for klass in self.get_ancestors():
+            for attr_str in klass.__dict__.keys():
+                if not attr_str.startswith('__'):
+                    attr_value = getattr(klass, attr_str)
+                    # Filter out class methods and properties
+                    if not callable(attr_value) and not isinstance(attr_value, property):
+                        attr = Attribute(
+                            name=attr_str,
+                            value=repr(attr_value),  # Sort out the lazy attributes
+                            classobject=klass,
+                            instance_class=self.klass
+                        )
+                        attrs.append(attr)
+        return attrs
+
 
     def get_available_versions(self):
         """

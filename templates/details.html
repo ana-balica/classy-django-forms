@@ -117,8 +117,7 @@
                                     {% if attribute.classobject == this_klass %}
                                         {{ this_klass_name }}
                                     {% else %}
-                                        {# <a href="{{ get_klass_url(attribute.classobject) }}">{{ attribute.classobject.__name__ }}</a> #}
-                                        <a href="#">{{ attribute.classobject.__name__ }}</a>
+                                        <a href="{{ get_klass_url(attribute.classobject) }}">{{ attribute.classobject.__name__ }}</a>
                                     {% endif %}
                                 </td>
                             </tr>
