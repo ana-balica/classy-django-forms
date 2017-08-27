@@ -77,6 +77,7 @@ class Inspector:
                             instance_class=self.klass
                         )
                         attrs.append(attr)
+        attrs.sort(key=lambda x: x.name)
         return attrs
 
 
