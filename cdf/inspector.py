@@ -1,4 +1,5 @@
 import json
+from collections import namedtuple
 
 from django import forms
 
@@ -21,19 +22,7 @@ def get_klasses():
     return klasses
 
 
-class Attribute:
-    def __init__(self, name, value, classobject, instance_class):
-        self.name = name
-        self.value = value
-        self.classobject = classobject
-        self.instance_class = instance_class
-        self.dirty = False
-
-    def __eq__(self, obj):
-        return self.name == obj.name and self.value == obj.value
-
-    def __neq__(self, obj):
-        return not self.__eq__(obj)
+Attribute = namedtuple('Attribute', ['name', 'value', 'classobject', 'instance_class'])
 
 
 class Inspector:
