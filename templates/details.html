@@ -65,34 +65,40 @@
 
 {% block content %}
     <div class="span12">
+
+        <!-- ANCESTORS -->
         <div class="row">
             {% for ancestor in ancestors %}
                 {% if loop.first %}
                     <div class="span4">
                     <h2>Ancestors (<abbr title="Method Resolution Order">MRO</abbr>)</h2>
                     <ol start='0' id="ancestors">
-                    <li><strong>{{ this_klass_name }}</strong></li>
+                        <li><strong>{{ this_klass_name }}</strong></li>
                 {% else %}
-                <li>
-                    <a href="{{ get_klass_url(ancestor) }}" class="{% if ancestor in direct_ancestors %}direct{% endif %}">
-                        {{ ancestor.__name__ }}
-                    </a>
-                </li>
+                        <li>
+                            <a href="{{ get_klass_url(ancestor) }}" class="{% if ancestor in direct_ancestors %}direct{% endif %}">
+                                {{ ancestor.__name__ }}
+                            </a>
+                        </li>
                 {% endif %}
                 {% if loop.last %}</ol></div>{% endif %}
             {% endfor %}
         </div>
+
+        <!-- DESCENDANTS -->
         <div class="row">
             {% for descendant in descendants %}
                 {% if loop.first %}
-                <div class="span4" id="descendants">
-                <h2>Descendants</h2>
-                <ul class="unstyled">
-                {% endif %}
-                    <li><a href="{{ get_klass_url(descendant) }}">{{ descendant.__name__ }}</a></li>
-                {% if loop.last %}</ul></div>{% endif %}
+                    <div class="span4" id="descendants">
+                    <h2>Descendants</h2>
+                    <ul class="unstyled">
+                    {% endif %}
+                        <li><a href="{{ get_klass_url(descendant) }}">{{ descendant.__name__ }}</a></li>
+                    {% if loop.last %}</ul></div>{% endif %}
             {% endfor %}
         </div>
+
+        <!-- ATTRIBUTES -->
         <div class="row">
             {% for attribute in attributes %}
                 {% if loop.first %}
@@ -124,24 +130,14 @@
                                 </td>
                             </tr>
                 {% if loop.last %}
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
                     </div>
                 {% endif %}
             {% endfor %}
         </div>
-        <div class="row">
-          {% for method in unavailable_methods %}
-              {% if loop.first %}
-              <div class="span12" id="unused-methods">
-              <h2>Methods used but not implemented in this class</h2>
-              <ul class="unstyled">
-              {% endif %}
-                  <li><strong>{{method}}</strong></li>
-              {% if loop.last %}</ul></div>{% endif %}
-          {% endfor %}
-        </div>
 
+        <!-- PROPERTIES -->
         <div class="row">
             {% for property in properties %}
                 {% if loop.first %}
@@ -150,8 +146,9 @@
                         <span class="btn btn-small" id="expand-methods-btn">Expand</span>
                         <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
                     </div>
-                    <h2>Properties</h2>
+                <h2>Properties</h2>
                 {% endif %}
+
                 {% if previous_name != property.name %}
                     <div class="method accordion-group">
                         <header class="accordion-heading btn" data-toggle="collapse" data-target="#{{ property.name }}">
@@ -195,6 +192,20 @@
             {% endfor %}
         </div>
 
+        <!-- UNAVAILABLE METHODS -->
+        <div class="row">
+          {% for method in unavailable_methods %}
+              {% if loop.first %}
+              <div class="span12" id="unused-methods">
+              <h2>Methods used but not implemented in this class</h2>
+              <ul class="unstyled">
+              {% endif %}
+                  <li><strong>{{method}}</strong></li>
+              {% if loop.last %}</ul></div>{% endif %}
+          {% endfor %}
+        </div>
+
+        <!-- METHODS -->
         <div class="row">
             {% for method in methods %}
                 {% if loop.first %}
