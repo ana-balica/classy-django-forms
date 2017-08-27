@@ -32,6 +32,7 @@ Attribute = namedtuple('Attribute', ['name', 'value', 'classobject', 'instance_c
 
 
 class Method:
+
     def __init__(self, name, value, classobject, instance_class):
         self.name = name
         self.value = value
@@ -57,6 +58,33 @@ class Method:
 
     def code(self):
         code = inspect.getsource(self.value)
+        return highlight(code, PythonLexer(), CodeHtmlFormatter(self.instance_class))
+
+
+class Property:
+
+    def __init__(self, name, value, classobject, instance_class):
+        self.name = name
+        self.value = value
+        self.classobject = classobject
+        self.instance_class = instance_class
+        self.children = []
+
+    def getter(self):
+        return self.code('fget')
+
+    def setter(self):
+        return self.code('fset')
+
+    def deleter(self):
+        return self.code('fdel')
+
+    def code(self, func_name):
+        func = getattr(self.value, func_name)
+        if func is None:
+            return ''
+
+        code = inspect.getsource(func)
         return highlight(code, PythonLexer(), CodeHtmlFormatter(self.instance_class))
 
 
@@ -115,6 +143,24 @@ class Inspector:
         attrs.sort(key=lambda x: x.name)
         return attrs
 
+    def get_properties(self):
+        properties = []
+
+        for klass in self.get_ancestors():
+            for attr_str in klass.__dict__.keys():
+                if not attr_str.startswith('__'):
+                    attr_value = getattr(klass, attr_str)
+                    if isinstance(attr_value, property):
+                        method = Property(
+                            name=attr_str,
+                            value=attr_value,
+                            classobject=klass,
+                            instance_class=self.klass
+                        )
+                        properties.append(method)
+        properties.sort(key=lambda x : x.name)
+        return properties
+
     def get_methods(self):
         """
         Get all class methods.
@@ -125,7 +171,6 @@ class Inspector:
             for attr_str in klass.__dict__.keys():
                 if not attr_str.startswith('__'):
                     attr_value = getattr(klass, attr_str)
-                    # Also try to pull properties
                     if isinstance(attr_value, types.FunctionType):
                         method = Method(
                             name=attr_str,
