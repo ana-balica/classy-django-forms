@@ -70,14 +70,25 @@ class Property:
         self.instance_class = instance_class
         self.children = []
 
+    @property
     def getter(self):
         return self.code('fget')
 
+    @property
     def setter(self):
         return self.code('fset')
 
+    @property
     def deleter(self):
         return self.code('fdel')
+
+    @property
+    def accessors(self):
+        return {
+            'getter': self.getter,
+            'setter': self.setter,
+            'deleter': self.deleter,
+        }
 
     def code(self, func_name):
         func = getattr(self.value, func_name)

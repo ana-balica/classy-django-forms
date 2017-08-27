@@ -164,24 +164,19 @@
                             </h3>
                         </header>
                         <div id="{{ property.name }}" class="accordion-body collapse in">
-                            {% for child in [property] + property.children %}
-                                {% if property.children|length != 0 %}
-                                    <div class="namesake accordion-group">
-                                        <header class="accordion-heading" data-toggle="collapse" data-target="#{{ child.name }}-{{ child.classobject.__name__ }}">
-                                            <h4 class="accordion-toggle">{{ child.classobject.__name__ }}</h4>
-                                        </header>
-                                        <div id="{{ child.name }}-{{ child.classobject.__name__ }}" class="accordion-body collapse in">
-                                            <div class="accordion-inner">
-                                {% endif %}
-                                                {% if child.value.__doc__ %}<pre class="docstring">{{ child.value.__doc__ }}</pre>{% endif %}
-                                                {{ child.getter()|safe }}
-                                                {{ child.setter()|safe }}
-                                                {{ child.deleter()|safe }}
-                                               {#  {% pygmy namesake.code linenos='True' linenostart=namesake.line_number lexer='python' %} #}
-                                {% if property.children|length != 0 %}
-                                            </div>
+                            {% for accessor, accessor_code in property.accessors.items() %}
+                                {% if accessor_code %}
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#{{ property.name }}-{{ accessor }}">
+                                        <h4 class="accordion-toggle">{{ accessor|capitalize }}</h4>
+                                    </header>
+                                    <div id="{{ property.name }}-{{ accessor }}" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            {# {% if property.value.__doc__ %}<pre class="docstring">{{ property.value.__doc__ }}</pre>{% endif %} #}
+                                            {{ accessor_code|safe }}
                                         </div>
                                     </div>
+                                </div>
                                 {% endif %}
                             {% endfor %}
                         </div>
