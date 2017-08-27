@@ -1,4 +1,6 @@
+import inspect
 import json
+import types
 from collections import namedtuple
 
 from django import forms
@@ -23,6 +25,35 @@ def get_klasses():
 
 
 Attribute = namedtuple('Attribute', ['name', 'value', 'classobject', 'instance_class'])
+
+
+class Method:
+    def __init__(self, name, value, classobject, instance_class):
+        self.name = name
+        self.value = value
+        self.classobject = classobject
+        self.instance_class = instance_class
+        self.children = []
+
+    def params(self):
+        stack = []
+        argspec = inspect.getargspec(self.value)
+        if argspec.keywords:
+            stack.insert(0, '**' + argspec.keywords)
+        if argspec.varargs:
+            stack.insert(0, '*' + argspec.varargs)
+        defaults = list(argspec.defaults or [])
+        for arg in argspec.args[::-1]:
+            if defaults:
+                default = defaults.pop()
+                stack.insert(0, '{}={}'.format(arg, default))
+            else:
+                stack.insert(0, arg)
+        return ', '.join(stack)
+
+    def code(self):
+        code = inspect.getsource(self.value)
+        return code
 
 
 class Inspector:
@@ -80,6 +111,27 @@ class Inspector:
         attrs.sort(key=lambda x: x.name)
         return attrs
 
+    def get_methods(self):
+        """
+        Get all class methods.
+        """
+        methods = []
+
+        for klass in self.get_ancestors():
+            for attr_str in klass.__dict__.keys():
+                if not attr_str.startswith('__'):
+                    attr_value = getattr(klass, attr_str)
+                    # Also try to pull properties
+                    if isinstance(attr_value, types.FunctionType):
+                        method = Method(
+                            name=attr_str,
+                            value=attr_value,
+                            classobject=klass,
+                            instance_class=self.klass
+                        )
+                        methods.append(method)
+        methods.sort(key=lambda x : x.name)
+        return methods
 
     def get_available_versions(self):
         """

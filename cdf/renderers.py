@@ -49,4 +49,5 @@ class DetailsPageRenderer(BasicPageRenderer):
         context['direct_ancestors'] = self.inspector.get_direct_ancestors()
         context['descendants'] = self.inspector.get_descendants()
         context['attributes'] = self.inspector.get_attributes()
+        context['methods'] = self.inspector.get_methods()
         return context
