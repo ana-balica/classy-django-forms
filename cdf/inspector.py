@@ -4,6 +4,10 @@ import types
 from collections import namedtuple
 
 from django import forms
+from pygments import highlight
+from pygments.lexers import PythonLexer
+
+from cdf.custom_formatter import CodeHtmlFormatter
 
 
 def get_klasses():
@@ -53,7 +57,7 @@ class Method:
 
     def code(self):
         code = inspect.getsource(self.value)
-        return code
+        return highlight(code, PythonLexer(), CodeHtmlFormatter(self.instance_class))
 
 
 class Inspector:
