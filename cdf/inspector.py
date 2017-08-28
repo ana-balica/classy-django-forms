@@ -71,23 +71,23 @@ class Property:
         self.children = []
 
     @property
-    def getter(self):
+    def getter_code(self):
         return self.code('fget')
 
     @property
-    def setter(self):
+    def setter_code(self):
         return self.code('fset')
 
     @property
-    def deleter(self):
+    def deleter_code(self):
         return self.code('fdel')
 
     @property
-    def accessors(self):
+    def accessors_code(self):
         return {
-            'getter': self.getter,
-            'setter': self.setter,
-            'deleter': self.deleter,
+            'getter': self.getter_code,
+            'setter': self.setter_code,
+            'deleter': self.deleter_code,
         }
 
     def code(self, func_name):

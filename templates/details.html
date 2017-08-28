@@ -164,7 +164,7 @@
                             </h3>
                         </header>
                         <div id="{{ property.name }}" class="accordion-body collapse in">
-                            {% for accessor, accessor_code in property.accessors.items() %}
+                            {% for accessor, accessor_code in property.accessors_code.items() %}
                                 {% if accessor_code %}
                                 <div class="namesake accordion-group">
                                     <header class="accordion-heading" data-toggle="collapse" data-target="#{{ property.name }}-{{ accessor }}">
