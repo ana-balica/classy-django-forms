@@ -90,6 +90,15 @@ class Property:
             'deleter': self.deleter_code,
         }
 
+    @property
+    def accessors(self):
+        funcs = [
+            getattr(self.value, 'fget'),
+            getattr(self.value, 'fset'),
+            getattr(self.value, 'fdel'),
+        ]
+        return [f for f in funcs if f is not None]
+
     def code(self, func_name):
         func = getattr(self.value, func_name)
         if func is None:
@@ -155,6 +164,9 @@ class Inspector:
         return attrs
 
     def get_properties(self):
+        """
+        Get a list of class properties.
+        """
         properties = []
 
         for klass in self.get_ancestors():
@@ -172,17 +184,29 @@ class Inspector:
         properties.sort(key=lambda x : x.name)
         return properties
 
-    def get_methods(self):
+    def _get_properties_accessors(self, properties):
         """
-        Get all class methods.
+        Put all properties accessors (getter / setter / deleter)
+        in a single list.
+        """
+        properties_accessors = []
+        for p in properties:
+            properties_accessors.extend(p.accessors)
+        return properties_accessors
+
+    def get_methods(self, properties=None):
+        """
+        Get all class methods, exclude getter / setter / deleter methods
+        of any class properties.
         """
         methods = []
+        properties_accessors = self._get_properties_accessors(properties or [])
 
         for klass in self.get_ancestors():
             for attr_str in klass.__dict__.keys():
                 if not attr_str.startswith('__'):
                     attr_value = getattr(klass, attr_str)
-                    if isinstance(attr_value, types.FunctionType):
+                    if isinstance(attr_value, types.FunctionType) and attr_value not in properties_accessors:
                         method = Method(
                             name=attr_str,
                             value=attr_value,
