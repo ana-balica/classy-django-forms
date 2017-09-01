@@ -1,4 +1,7 @@
 html {overflow-y: scroll;}
+h1, h2 {
+    margin-bottom: 6px;
+}
 #logo {
     color: #888;
     font-size: 50px;
