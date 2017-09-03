@@ -16,15 +16,20 @@ def get_klasses():
 
     :returns: dict of the form {module: [classA, classB, classC]}
     """
-    # TODO: update the list of modules
-    modules = [forms.fields, forms.widgets]
+    module_names = [
+        'fields',
+        'forms',
+        'widgets',
+    ]
     klasses = {}
 
-    for module in modules:
-        klasses[module] = []
-        for klass_name in module.__all__:
-            klass = getattr(module, klass_name)
-            klasses[module].append(klass)
+    for module_name in module_names:
+        module = getattr(forms, module_name, None)
+        if module:
+            klasses[module] = []
+            for klass_name in module.__all__:
+                klass = getattr(module, klass_name)
+                klasses[module].append(klass)
     return klasses
 
 
