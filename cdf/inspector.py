@@ -17,8 +17,11 @@ def get_klasses():
     :returns: dict of the form {module: [classA, classB, classC]}
     """
     module_names = [
+        'boundfield',
         'fields',
         'forms',
+        'formsets',
+        'models',
         'widgets',
     ]
     klasses = {}
@@ -29,7 +32,8 @@ def get_klasses():
             klasses[module] = []
             for klass_name in module.__all__:
                 klass = getattr(module, klass_name)
-                klasses[module].append(klass)
+                if inspect.isclass(klass):
+                    klasses[module].append(klass)
     return klasses
 
 
