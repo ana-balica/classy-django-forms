@@ -12,3 +12,4 @@ DJANGO_VERSIONS = [
 
 
 VERSION = get_major_dot_minor_version(django_version)
+BASE_URL = 'http://someurl.com'

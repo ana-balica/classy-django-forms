@@ -1,4 +1,6 @@
-from cdf.config import DJANGO_VERSIONS, VERSION
+import json
+
+from cdf.config import BASE_URL, DJANGO_VERSIONS, VERSION
 from cdf.inspector import Inspector
 from cdf.jinja_utils import template_env
 
@@ -52,4 +54,16 @@ class DetailsPageRenderer(BasicPageRenderer):
         properties = self.inspector.get_properties()
         context['properties'] = properties
         context['methods'] = self.inspector.get_methods(properties)
+
+
+class SitemapRenderer(BasicPageRenderer):
+
+    def get_context(self):
+        context = {}
+        with open('.klasses.json', 'r') as f:
+            klasses = json.loads(f.read())
+
+        context['klasses'] = klasses
+        context['latest_version'] = DJANGO_VERSIONS[-1]
+        context['base_url'] = BASE_URL
         return context

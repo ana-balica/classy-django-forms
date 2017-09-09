@@ -6,6 +6,7 @@ from cdf.inspector import get_klasses
 from cdf.renderers import (
     BasicPageRenderer,
     DetailsPageRenderer,
+    SitemapRenderer,
 )
 
 
@@ -31,6 +32,11 @@ def main():
         renderer.render('index.html', index_path)
         not_found_path = os.path.join(out_folder, '404.html')
         renderer.render('404.html', not_found_path)
+
+        renderer = SitemapRenderer(klasses)
+        sitemap_path = os.path.join(out_folder, 'sitemap.xml')
+        renderer.render('sitemap.xml', sitemap_path)
+
 
 if __name__ == '__main__':
     main()
