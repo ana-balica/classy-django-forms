@@ -37,7 +37,7 @@ def get_klasses():
     return klasses
 
 
-Attribute = namedtuple('Attribute', ['name', 'value', 'classobject', 'instance_class'])
+Attribute = namedtuple('Attribute', ['name', 'value', 'classobject', 'instance_class', 'overridden'])
 
 
 class Method:
@@ -155,6 +155,7 @@ class Inspector:
         excluding the dunder attributes, methods and properties.
         """
         attrs = []
+        attrs_names = []
 
         for klass in self.get_ancestors():
             for attr_name in klass.__dict__.keys():
@@ -162,13 +163,17 @@ class Inspector:
                     attr_value = getattr(klass, attr_name)
                     # Filter out class methods and properties
                     if not callable(attr_value) and not isinstance(attr_value, property):
+                        # Overridden attributes come later due to mro order
+                        overridden = True if attr_name in attrs_names else False
                         attr = Attribute(
                             name=attr_name,
                             value=repr(attr_value),  # Sort out the lazy attributes
                             classobject=klass,
-                            instance_class=self.klass
+                            instance_class=self.klass,
+                            overridden=overridden,
                         )
                         attrs.append(attr)
+                        attrs_names.append(attr_name)
         attrs.sort(key=lambda x: x.name)
         return attrs
 
