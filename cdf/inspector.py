@@ -157,13 +157,13 @@ class Inspector:
         attrs = []
 
         for klass in self.get_ancestors():
-            for attr_str in klass.__dict__.keys():
-                if not attr_str.startswith('__'):
-                    attr_value = getattr(klass, attr_str)
+            for attr_name in klass.__dict__.keys():
+                if not attr_name.startswith('__'):
+                    attr_value = getattr(klass, attr_name)
                     # Filter out class methods and properties
                     if not callable(attr_value) and not isinstance(attr_value, property):
                         attr = Attribute(
-                            name=attr_str,
+                            name=attr_name,
                             value=repr(attr_value),  # Sort out the lazy attributes
                             classobject=klass,
                             instance_class=self.klass
