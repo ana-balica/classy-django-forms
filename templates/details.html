@@ -116,7 +116,6 @@
                             <tr>
                                 <td>
                                     <code class="attribute{%if attribute.overridden %} overridden{% endif %}">
-                                    {# <code class="attribute"> #}
                                         <strong>{{ attribute.name }}</strong> = {{ attribute.value|e }}
                                     </code>
                                 </td>
@@ -236,7 +235,6 @@
                                 {% endif %}
                                                 {% if child.value.__doc__ %}<pre class="docstring">{{ child.value.__doc__ }}</pre>{% endif %}
                                                 {{ child.code()|safe }}
-                                               {#  {% pygmy namesake.code linenos='True' linenostart=namesake.line_number lexer='python' %} #}
                                 {% if method.children|length != 0 %}
                                             </div>
                                         </div>
