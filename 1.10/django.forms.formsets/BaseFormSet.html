@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> -- Classy Django Forms</title>
+    
+    <meta name="description" content="Detailed descriptions, with full methods and attributes of  Django class.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="google-site-verification" content="qouob3hX67Bv8TpnZJzMsxaDQZP0mVk-Jv2fV9gX93s" /> -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles from Twitter Bootstrap-->
+    <link href="/static/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/manni.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/jquery-1.7.1.min.js"><\/script>');</script>
+    <script src="/static/bootstrap-collapse.js"></script>
+    <script src="/static/modernizr-2.5.3.min.js"></script>
+    <script src="/static/bootstrap-dropdowns.js"></script>
+    <script>$('.dropdown-toggle').dropdown()</script>
+
+    
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">cdf</a>
+                <ul class="nav">
+
+                
+
+                <li li="version-1.10" class="dropdown">
+                    
+                        <a href="#version-1.10" class="dropdown-toggle" data-toggle="dropdown">
+                            Django 1.10 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a href="/1.8/django.forms.formsets/BaseFormSet.html">1.8</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/1.9/django.forms.formsets/BaseFormSet.html">1.9</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/1.11/django.forms.formsets/BaseFormSet.html">1.11</a>
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+
+                <li class="divider-vertical"></li>
+                
+                    
+                        
+                        
+                        <li id="module-boundfield" class="dropdown">
+                            <a href="#module-boundfield" class="dropdown-toggle" data-toggle="dropdown">
+                                Boundfield <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.boundfield/BoundField.html">BoundField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-fields" class="dropdown">
+                            <a href="#module-fields" class="dropdown-toggle" data-toggle="dropdown">
+                                Fields <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/BooleanField.html">BooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/CharField.html">CharField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/ChoiceField.html">ChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/ComboField.html">ComboField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/DateField.html">DateField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/DateTimeField.html">DateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/DecimalField.html">DecimalField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/DurationField.html">DurationField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/EmailField.html">EmailField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/Field.html">Field</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/FileField.html">FileField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/FilePathField.html">FilePathField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/FloatField.html">FloatField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/GenericIPAddressField.html">GenericIPAddressField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/ImageField.html">ImageField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/IntegerField.html">IntegerField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/MultiValueField.html">MultiValueField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/MultipleChoiceField.html">MultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/NullBooleanField.html">NullBooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/RegexField.html">RegexField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/SlugField.html">SlugField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/SplitDateTimeField.html">SplitDateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/TimeField.html">TimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/TypedChoiceField.html">TypedChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/TypedMultipleChoiceField.html">TypedMultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/URLField.html">URLField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/UUIDField.html">UUIDField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-forms" class="dropdown">
+                            <a href="#module-forms" class="dropdown-toggle" data-toggle="dropdown">
+                                Forms <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.forms/BaseForm.html">BaseForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.forms/Form.html">Form</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-formsets" class="dropdown">
+                            <a href="#module-formsets" class="dropdown-toggle" data-toggle="dropdown">
+                                Formsets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li class=" active">
+                            <a href="/1.10/django.forms.formsets/BaseFormSet.html">BaseFormSet</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-models" class="dropdown">
+                            <a href="#module-models" class="dropdown-toggle" data-toggle="dropdown">
+                                Models <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/BaseInlineFormSet.html">BaseInlineFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/BaseModelForm.html">BaseModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/BaseModelFormSet.html">BaseModelFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/ModelChoiceField.html">ModelChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/ModelForm.html">ModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/ModelMultipleChoiceField.html">ModelMultipleChoiceField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-widgets" class="dropdown">
+                            <a href="#module-widgets" class="dropdown-toggle" data-toggle="dropdown">
+                                Widgets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/CheckboxInput.html">CheckboxInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/CheckboxSelectMultiple.html">CheckboxSelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/ClearableFileInput.html">ClearableFileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/DateInput.html">DateInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/DateTimeInput.html">DateTimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/EmailInput.html">EmailInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/FileInput.html">FileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/HiddenInput.html">HiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/Media.html">Media</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/MediaDefiningClass.html">MediaDefiningClass</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/MultiWidget.html">MultiWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/MultipleHiddenInput.html">MultipleHiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/NullBooleanSelect.html">NullBooleanSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/NumberInput.html">NumberInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/PasswordInput.html">PasswordInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/RadioSelect.html">RadioSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/Select.html">Select</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/SelectDateWidget.html">SelectDateWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/SelectMultiple.html">SelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/SplitDateTimeWidget.html">SplitDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/SplitHiddenDateTimeWidget.html">SplitHiddenDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/TextInput.html">TextInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/Textarea.html">Textarea</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/TimeInput.html">TimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/URLInput.html">URLInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/Widget.html">Widget</a>
+                        </li>
+                    
+                    
+                
+                </ul></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <article id="main">
+            
+    <h1><small>class</small>&nbsp;BaseFormSet</h1>
+    <pre>from django.forms import BaseFormSet</pre>
+    <div class="pull-right">
+        
+            <a class="btn btn-small btn-info" href="https://docs.djangoproject.com/en/1.10/ref/forms/formsets/#baseformset" target="_blank">Documentation</a>
+        
+        <a class="btn btn-small btn-info" href="https://github.com/django/django/blob/stable/1.10.x/django/forms/formsets.py#L52" target="_blank">Source code</a>
+    </div>
+    
+        <pre class="docstring">
+    A collection of instances of the same Form class.
+    </pre>
+    
+
+            <div class="row">
+    <div class="span12">
+
+        <!-- ANCESTORS -->
+        <div class="row">
+            
+                
+                    <div class="span4">
+                    <h2>Ancestors (<abbr title="Method Resolution Order">MRO</abbr>)</h2>
+                    <ol start='0' id="ancestors">
+                        <li><strong>BaseFormSet</strong></li>
+                
+                </ol></div>
+            
+        </div>
+
+        <!-- DESCENDANTS -->
+        <div class="row">
+            
+                
+                    <div class="span4" id="descendants">
+                    <h2>Descendants</h2>
+                    <ul class="unstyled">
+                    
+                        <li><a href="/1.10/django.forms.models/BaseInlineFormSet.html">BaseInlineFormSet</a></li>
+                    
+            
+                
+                        <li><a href="/1.10/django.forms.models/BaseModelFormSet.html">BaseModelFormSet</a></li>
+                    </ul></div>
+            
+        </div>
+
+        <!-- ATTRIBUTES -->
+        <div class="row">
+            
+                
+                    <div class="span12">
+                        <h2>Attributes</h2>
+                        <table class="table table-striped table-bordered table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Defined in</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>forms</strong> = &lt;django.utils.functional.cached_property object at 0x10df0b780&gt;
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        BaseFormSet
+                                    
+                                </td>
+                            </tr>
+                
+                            </tbody>
+                        </table>
+                    </div>
+                
+            
+        </div>
+
+        <!-- PROPERTIES -->
+        <div class="row">
+            
+                
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                <h2>Properties</h2>
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#cleaned_data">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">cleaned_data</span>():
+                                </code>
+                                 <a class="headerlink" href="#cleaned_data" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="cleaned_data" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#cleaned_data-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="cleaned_data-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">cleaned_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a list of form.cleaned_data dicts for every form in self.forms.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s2">&quot;&#39;</span><span class="si">%s</span><span class="s2">&#39; object has no attribute &#39;cleaned_data&#39;&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">form</span><span class="o">.</span><span class="n">cleaned_data</span> <span class="k">for</span> <span class="n">form</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">]</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#deleted_forms">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">deleted_forms</span>():
+                                </code>
+                                 <a class="headerlink" href="#deleted_forms" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="deleted_forms" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#deleted_forms-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="deleted_forms-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">deleted_forms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a list of forms that have been marked for deletion.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_valid</span><span class="p">()</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">can_delete</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="c1"># construct _deleted_form_indexes which is just a list of form indexes</span>
+        <span class="c1"># that have had their deletion widget set to True</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_deleted_form_indexes&#39;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_deleted_form_indexes</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_form_count</span><span class="p">()):</span>
+                <span class="n">form</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="c1"># if this is an extra form and hasn&#39;t changed, don&#39;t consider it</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_form_count</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">form</span><span class="o">.</span><span class="n">has_changed</span><span class="p">():</span>
+                    <span class="k">continue</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_should_delete_form</span><span class="p">(</span><span class="n">form</span><span class="p">):</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_deleted_form_indexes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_deleted_form_indexes</span><span class="p">]</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#empty_form">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">empty_form</span>():
+                                </code>
+                                 <a class="headerlink" href="#empty_form" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="empty_form" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#empty_form-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="empty_form-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">empty_form</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="p">(</span>
+            <span class="n">auto_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auto_id</span><span class="p">,</span>
+            <span class="n">prefix</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">add_prefix</span><span class="p">(</span><span class="s1">&#39;__prefix__&#39;</span><span class="p">),</span>
+            <span class="n">empty_permitted</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+            <span class="n">use_required_attribute</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+            <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">get_form_kwargs</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_fields</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">form</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#errors">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">errors</span>():
+                                </code>
+                                 <a class="headerlink" href="#errors" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="errors" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#errors-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="errors-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">errors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a list of form.errors for every form in self.forms.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_errors</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">full_clean</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_errors</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#extra_forms">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">extra_forms</span>():
+                                </code>
+                                 <a class="headerlink" href="#extra_forms" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="extra_forms" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#extra_forms-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="extra_forms-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_forms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a list of all the extra forms in this formset.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">initial_form_count</span><span class="p">():]</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#initial_forms">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">initial_forms</span>():
+                                </code>
+                                 <a class="headerlink" href="#initial_forms" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="initial_forms" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#initial_forms-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="initial_forms-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">initial_forms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return a list of all the initial forms in this formset.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[:</span><span class="bp">self</span><span class="o">.</span><span class="n">initial_form_count</span><span class="p">()]</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#management_form">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">management_form</span>():
+                                </code>
+                                 <a class="headerlink" href="#management_form" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="management_form" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#management_form-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="management_form-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">management_form</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns the ManagementForm instance for this FormSet.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_bound</span><span class="p">:</span>
+            <span class="n">form</span> <span class="o">=</span> <span class="n">ManagementForm</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">auto_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auto_id</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">form</span><span class="o">.</span><span class="n">is_valid</span><span class="p">():</span>
+                <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span>
+                    <span class="n">_</span><span class="p">(</span><span class="s1">&#39;ManagementForm data is missing or has been tampered with&#39;</span><span class="p">),</span>
+                    <span class="n">code</span><span class="o">=</span><span class="s1">&#39;missing_management_form&#39;</span><span class="p">,</span>
+                <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">form</span> <span class="o">=</span> <span class="n">ManagementForm</span><span class="p">(</span><span class="n">auto_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">auto_id</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="p">{</span>
+                <span class="n">TOTAL_FORM_COUNT</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_form_count</span><span class="p">(),</span>
+                <span class="n">INITIAL_FORM_COUNT</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_form_count</span><span class="p">(),</span>
+                <span class="n">MIN_NUM_FORM_COUNT</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_num</span><span class="p">,</span>
+                <span class="n">MAX_NUM_FORM_COUNT</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="n">form</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#media">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">media</span>():
+                                </code>
+                                 <a class="headerlink" href="#media" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="media" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#media-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="media-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">media</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># All the forms on a FormSet are the same, so you only need to</span>
+        <span class="c1"># interrogate the first form for media.</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">media</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_form</span><span class="o">.</span><span class="n">media</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#ordered_forms">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">ordered_forms</span>():
+                                </code>
+                                 <a class="headerlink" href="#ordered_forms" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="ordered_forms" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#ordered_forms-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="ordered_forms-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ordered_forms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a list of form in the order specified by the incoming data.</span>
+<span class="sd">        Raises an AttributeError if ordering is not allowed.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_valid</span><span class="p">()</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">can_order</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s2">&quot;&#39;</span><span class="si">%s</span><span class="s2">&#39; object has no attribute &#39;ordered_forms&#39;&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+        <span class="c1"># Construct _ordering, which is a list of (form_index, order_field_value)</span>
+        <span class="c1"># tuples. After constructing this list, we&#39;ll sort it by order_field_value</span>
+        <span class="c1"># so we have a way to get to the form indexes in the order specified</span>
+        <span class="c1"># by the form data.</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_ordering&#39;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_ordering</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_form_count</span><span class="p">()):</span>
+                <span class="n">form</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="c1"># if this is an extra form and hasn&#39;t changed, don&#39;t consider it</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_form_count</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">form</span><span class="o">.</span><span class="n">has_changed</span><span class="p">():</span>
+                    <span class="k">continue</span>
+                <span class="c1"># don&#39;t add data marked for deletion to self.ordered_data</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">can_delete</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_should_delete_form</span><span class="p">(</span><span class="n">form</span><span class="p">):</span>
+                    <span class="k">continue</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_ordering</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">form</span><span class="o">.</span><span class="n">cleaned_data</span><span class="p">[</span><span class="n">ORDERING_FIELD_NAME</span><span class="p">]))</span>
+            <span class="c1"># After we&#39;re done populating self._ordering, sort it.</span>
+            <span class="c1"># A sort function to order things numerically ascending, but</span>
+            <span class="c1"># None should be sorted below anything else. Allowing None as</span>
+            <span class="c1"># a comparison value makes it so we can leave ordering fields</span>
+            <span class="c1"># blank.</span>
+
+            <span class="k">def</span> <span class="nf">compare_ordering_key</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># +infinity, larger than any number</span>
+                <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">k</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_ordering</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">compare_ordering_key</span><span class="p">)</span>
+        <span class="c1"># Return a list of form.cleaned_data dicts in the order specified by</span>
+        <span class="c1"># the form data.</span>
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ordering</span><span class="p">]</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+        </div>
+
+        <!-- METHODS -->
+        <div class="row">
+            
+                
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                    <h2>Methods</h2>
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#_construct_form">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">_construct_form</span>(<span class="n">self, i, **kwargs</span>):
+                                </code>
+                                 <a class="headerlink" href="#_construct_form" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="_construct_form" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Instantiates and returns the i-th form instance in a formset.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">_construct_form</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Instantiates and returns the i-th form instance in a formset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">defaults</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;auto_id&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_id</span><span class="p">,</span>
+            <span class="s1">&#39;prefix&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_prefix</span><span class="p">(</span><span class="n">i</span><span class="p">),</span>
+            <span class="s1">&#39;error_class&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">error_class</span><span class="p">,</span>
+            <span class="c1"># Don&#39;t render the HTML &#39;required&#39; attribute as it may cause</span>
+            <span class="c1"># incorrect validation for extra, optional, and deleted</span>
+            <span class="c1"># forms in the formset.</span>
+            <span class="s1">&#39;use_required_attribute&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_bound</span><span class="p">:</span>
+            <span class="n">defaults</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
+            <span class="n">defaults</span><span class="p">[</span><span class="s1">&#39;files&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">files</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial</span> <span class="ow">and</span> <span class="s1">&#39;initial&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">defaults</span><span class="p">[</span><span class="s1">&#39;initial&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                <span class="k">pass</span>
+        <span class="c1"># Allow extra forms to be empty, unless they&#39;re part of</span>
+        <span class="c1"># the minimum forms.</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_form_count</span><span class="p">()</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_num</span><span class="p">:</span>
+            <span class="n">defaults</span><span class="p">[</span><span class="s1">&#39;empty_permitted&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="n">defaults</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="p">(</span><span class="o">**</span><span class="n">defaults</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_fields</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">form</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#_should_delete_form">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">_should_delete_form</span>(<span class="n">self, form</span>):
+                                </code>
+                                 <a class="headerlink" href="#_should_delete_form" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="_should_delete_form" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns whether or not the form was marked for deletion.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">_should_delete_form</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">form</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns whether or not the form was marked for deletion.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">form</span><span class="o">.</span><span class="n">cleaned_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">DELETION_FIELD_NAME</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#add_fields">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">add_fields</span>(<span class="n">self, form, index</span>):
+                                </code>
+                                 <a class="headerlink" href="#add_fields" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="add_fields" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">A hook for adding extra fields on to each form instance.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">add_fields</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">form</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;A hook for adding extra fields on to each form instance.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">can_order</span><span class="p">:</span>
+            <span class="c1"># Only pre-fill the ordering field for initial forms.</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="ow">and</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_form_count</span><span class="p">():</span>
+                <span class="n">form</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">ORDERING_FIELD_NAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">IntegerField</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Order&#39;</span><span class="p">),</span> <span class="n">initial</span><span class="o">=</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">form</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">ORDERING_FIELD_NAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">IntegerField</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Order&#39;</span><span class="p">),</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">can_delete</span><span class="p">:</span>
+            <span class="n">form</span><span class="o">.</span><span class="n">fields</span><span class="p">[</span><span class="n">DELETION_FIELD_NAME</span><span class="p">]</span> <span class="o">=</span> <span class="n">BooleanField</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">_</span><span class="p">(</span><span class="s1">&#39;Delete&#39;</span><span class="p">),</span> <span class="n">required</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#add_prefix">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">add_prefix</span>(<span class="n">self, index</span>):
+                                </code>
+                                 <a class="headerlink" href="#add_prefix" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="add_prefix" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">add_prefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">-</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#as_p">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">as_p</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#as_p" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="as_p" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">Returns this formset rendered as HTML &lt;p&gt;s.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">as_p</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s2">&quot;Returns this formset rendered as HTML &lt;p&gt;s.&quot;</span>
+        <span class="n">forms</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">as_p</span><span class="p">()</span> <span class="k">for</span> <span class="n">form</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mark_safe</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">six</span><span class="o">.</span><span class="n">text_type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">management_form</span><span class="p">),</span> <span class="n">forms</span><span class="p">]))</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#as_table">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">as_table</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#as_table" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="as_table" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">Returns this formset rendered as HTML &lt;tr&gt;s -- excluding the &lt;table&gt;&lt;/table&gt;.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">as_table</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s2">&quot;Returns this formset rendered as HTML &lt;tr&gt;s -- excluding the &lt;table&gt;&lt;/table&gt;.&quot;</span>
+        <span class="c1"># XXX: there is no semantic division between forms here, there</span>
+        <span class="c1"># probably should be. It might make sense to render each form as a</span>
+        <span class="c1"># table row with each field as a td.</span>
+        <span class="n">forms</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">as_table</span><span class="p">()</span> <span class="k">for</span> <span class="n">form</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mark_safe</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">six</span><span class="o">.</span><span class="n">text_type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">management_form</span><span class="p">),</span> <span class="n">forms</span><span class="p">]))</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#as_ul">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">as_ul</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#as_ul" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="as_ul" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">Returns this formset rendered as HTML &lt;li&gt;s.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">as_ul</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s2">&quot;Returns this formset rendered as HTML &lt;li&gt;s.&quot;</span>
+        <span class="n">forms</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">as_ul</span><span class="p">()</span> <span class="k">for</span> <span class="n">form</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mark_safe</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">six</span><span class="o">.</span><span class="n">text_type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">management_form</span><span class="p">),</span> <span class="n">forms</span><span class="p">]))</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#clean">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">clean</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#clean" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="clean" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Hook for doing any extra formset-wide cleaning after Form.clean() has
+        been called on every form. Any ValidationError raised by this method
+        will not be associated with a particular form; it will be accessible
+        via formset.non_form_errors()
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">clean</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Hook for doing any extra formset-wide cleaning after Form.clean() has</span>
+<span class="sd">        been called on every form. Any ValidationError raised by this method</span>
+<span class="sd">        will not be associated with a particular form; it will be accessible</span>
+<span class="sd">        via formset.non_form_errors()</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#full_clean">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">full_clean</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#full_clean" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="full_clean" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Cleans all of self.data and populates self._errors and
+        self._non_form_errors.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">full_clean</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Cleans all of self.data and populates self._errors and</span>
+<span class="sd">        self._non_form_errors.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_errors</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_non_form_errors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">error_class</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_bound</span><span class="p">:</span>  <span class="c1"># Stop further processing.</span>
+            <span class="k">return</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_form_count</span><span class="p">()):</span>
+            <span class="n">form</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_errors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">errors</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">validate_max</span> <span class="ow">and</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">total_form_count</span><span class="p">()</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">deleted_forms</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span><span class="p">)</span> <span class="ow">or</span> \
+                    <span class="bp">self</span><span class="o">.</span><span class="n">management_form</span><span class="o">.</span><span class="n">cleaned_data</span><span class="p">[</span><span class="n">TOTAL_FORM_COUNT</span><span class="p">]</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">absolute_max</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="n">ungettext</span><span class="p">(</span>
+                    <span class="s2">&quot;Please submit </span><span class="si">%d</span><span class="s2"> or fewer forms.&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Please submit </span><span class="si">%d</span><span class="s2"> or fewer forms.&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span><span class="p">)</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span><span class="p">,</span>
+                    <span class="n">code</span><span class="o">=</span><span class="s1">&#39;too_many_forms&#39;</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">validate_min</span> <span class="ow">and</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">total_form_count</span><span class="p">()</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">deleted_forms</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_num</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="n">ungettext</span><span class="p">(</span>
+                    <span class="s2">&quot;Please submit </span><span class="si">%d</span><span class="s2"> or more forms.&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;Please submit </span><span class="si">%d</span><span class="s2"> or more forms.&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_num</span><span class="p">)</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_num</span><span class="p">,</span>
+                    <span class="n">code</span><span class="o">=</span><span class="s1">&#39;too_few_forms&#39;</span><span class="p">)</span>
+            <span class="c1"># Give self.clean() a chance to do cross-form validation.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">clean</span><span class="p">()</span>
+        <span class="k">except</span> <span class="n">ValidationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_non_form_errors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">error_class</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">error_list</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#get_form_kwargs">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">get_form_kwargs</span>(<span class="n">self, index</span>):
+                                </code>
+                                 <a class="headerlink" href="#get_form_kwargs" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="get_form_kwargs" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Return additional keyword arguments for each individual formset form.
+
+        index will be None if the form being constructed is a new empty
+        form.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">get_form_kwargs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return additional keyword arguments for each individual formset form.</span>
+
+<span class="sd">        index will be None if the form being constructed is a new empty</span>
+<span class="sd">        form.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">form_kwargs</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#has_changed">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">has_changed</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#has_changed" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="has_changed" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns true if data in any form differs from initial.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">has_changed</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns true if data in any form differs from initial.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">any</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">has_changed</span><span class="p">()</span> <span class="k">for</span> <span class="n">form</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#initial_form_count">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">initial_form_count</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#initial_form_count" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="initial_form_count" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">Returns the number of forms that are required in this FormSet.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">initial_form_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns the number of forms that are required in this FormSet.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_bound</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">management_form</span><span class="o">.</span><span class="n">cleaned_data</span><span class="p">[</span><span class="n">INITIAL_FORM_COUNT</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Use the length of the initial data if it&#39;s there, 0 otherwise.</span>
+            <span class="n">initial_forms</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">initial</span><span class="p">)</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="n">initial_forms</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#is_multipart">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">is_multipart</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#is_multipart" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="is_multipart" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns True if the formset needs to be multipart, i.e. it
+        has FileInput. Otherwise, False.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">is_multipart</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns True if the formset needs to be multipart, i.e. it</span>
+<span class="sd">        has FileInput. Otherwise, False.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">is_multipart</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_form</span><span class="o">.</span><span class="n">is_multipart</span><span class="p">()</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#is_valid">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">is_valid</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#is_valid" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="is_valid" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns True if every form in self.forms is valid.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">is_valid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns True if every form in self.forms is valid.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_bound</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">False</span>
+        <span class="c1"># We loop over every form.errors here rather than short circuiting on the</span>
+        <span class="c1"># first failure to make sure validation gets triggered for every form.</span>
+        <span class="n">forms_valid</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="c1"># This triggers a full clean.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">errors</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_form_count</span><span class="p">()):</span>
+            <span class="n">form</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">forms</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">can_delete</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_should_delete_form</span><span class="p">(</span><span class="n">form</span><span class="p">):</span>
+                    <span class="c1"># This form is going to be deleted so any of its errors</span>
+                    <span class="c1"># should not cause the entire formset to be invalid.</span>
+                    <span class="k">continue</span>
+            <span class="n">forms_valid</span> <span class="o">&amp;=</span> <span class="n">form</span><span class="o">.</span><span class="n">is_valid</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">forms_valid</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">non_form_errors</span><span class="p">()</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#non_form_errors">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">non_form_errors</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#non_form_errors" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="non_form_errors" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns an ErrorList of errors that aren&#39;t associated with a particular
+        form -- i.e., from formset.clean(). Returns an empty ErrorList if there
+        are none.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">non_form_errors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns an ErrorList of errors that aren&#39;t associated with a particular</span>
+<span class="sd">        form -- i.e., from formset.clean(). Returns an empty ErrorList if there</span>
+<span class="sd">        are none.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_non_form_errors</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">full_clean</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_non_form_errors</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#total_error_count">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">total_error_count</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#total_error_count" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="total_error_count" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns the number of errors across all forms in the formset.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">total_error_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the number of errors across all forms in the formset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">non_form_errors</span><span class="p">())</span> <span class="o">+</span>\
+            <span class="nb">sum</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">form_errors</span><span class="p">)</span> <span class="k">for</span> <span class="n">form_errors</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#total_form_count">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">total_form_count</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#total_form_count" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BaseFormSet</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="total_form_count" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">Returns the total number of forms in this FormSet.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">total_form_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns the total number of forms in this FormSet.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_bound</span><span class="p">:</span>
+            <span class="c1"># return absolute_max if it is lower than the actual total form</span>
+            <span class="c1"># count in the data; this is DoS protection to prevent clients</span>
+            <span class="c1"># from forcing the server to instantiate arbitrary numbers of</span>
+            <span class="c1"># forms</span>
+            <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">management_form</span><span class="o">.</span><span class="n">cleaned_data</span><span class="p">[</span><span class="n">TOTAL_FORM_COUNT</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">absolute_max</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">initial_forms</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial_form_count</span><span class="p">()</span>
+            <span class="n">total_forms</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">initial_forms</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_num</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">extra</span>
+            <span class="c1"># Allow all existing related objects/inlines to be displayed,</span>
+            <span class="c1"># but don&#39;t allow extra beyond max_num.</span>
+            <span class="k">if</span> <span class="n">initial_forms</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">total_forms</span> <span class="o">=</span> <span class="n">initial_forms</span>
+            <span class="k">elif</span> <span class="n">total_forms</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">total_forms</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span>
+        <span class="k">return</span> <span class="n">total_forms</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+        </div>
+
+    </div>
+</div>
+        </article>
+        
+            <footer>
+                <hr />
+                <p>Built by <a href="http://twitter.com/anabalica" target="_blank">@anabalica</a>.</p>
+
+                <p><a href="http://github.com/anabalica/classy-django-forms/">Source code</a> and
+                <a href="https://github.com/vintasoftware/classy-django-forms/graphs/contributors">Contributors</a>
+                on <a href="http://github.com/">GitHub</a>.</p>
+
+                <p>Based on <a href="http://ccbv.co.uk/">Django Classy Class-Based Views</a> and <a href="http://www.cdrf.co/">Classy Django Rest Framework</a>.</p>
+            </footer>
+        
+    </div> <!-- /container -->
+    <script type="text/javascript">$('.dropdown-toggle').dropdown()</script>
+    
+    <script>
+        // Activate accordion
+        $(function () {
+            $(".collapse").collapse();
+            // Method collapsing/expanding buttons
+            $("#collapse-methods-btn").click(function() {
+                CCBV.method_list.collapse();
+            });
+            $("#expand-methods-btn").click(function() {
+                CCBV.method_list.expand();
+            });
+
+            function goToAnchor() {
+              var anchor = window.location.hash.replace("#", "");
+              $(".collapse").collapse('hide');
+              if (anchor) {
+                $("#" + anchor).collapse('show');
+                $('#' + anchor + ' .collapse').collapse('show');
+                setTimeout(function(){
+                  console.log($('#' + anchor).attr('class'));
+                  $('html, body').animate({
+                    scrollTop: $('#' + anchor).offset().top - 70
+                  }, 0);
+                }, 500);
+              }
+            }
+
+            $(document).ready(function() {
+              goToAnchor();
+
+              window.addEventListener("hashchange", function() { goToAnchor(); });
+
+            });
+        });
+    </script>
+    <script src="/static/ccbv.js"></script>
+
+    
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     // ga('create', 'UA-62227446-1', 'auto');
+     // ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

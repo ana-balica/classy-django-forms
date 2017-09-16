@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> -- Classy Django Forms</title>
+    
+    <meta name="description" content="Detailed descriptions, with full methods and attributes of  Django class.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="google-site-verification" content="qouob3hX67Bv8TpnZJzMsxaDQZP0mVk-Jv2fV9gX93s" /> -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles from Twitter Bootstrap-->
+    <link href="/static/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/manni.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/jquery-1.7.1.min.js"><\/script>');</script>
+    <script src="/static/bootstrap-collapse.js"></script>
+    <script src="/static/modernizr-2.5.3.min.js"></script>
+    <script src="/static/bootstrap-dropdowns.js"></script>
+    <script>$('.dropdown-toggle').dropdown()</script>
+
+    
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">cdf</a>
+                <ul class="nav">
+
+                
+
+                <li li="version-1.8" class="dropdown">
+                    
+                        <a href="#version-1.8" class="dropdown-toggle" data-toggle="dropdown">
+                            Django 1.8 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a href="/1.9/django.forms.widgets/Media.html">1.9</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/1.10/django.forms.widgets/Media.html">1.10</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/1.11/django.forms.widgets/Media.html">1.11</a>
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+
+                <li class="divider-vertical"></li>
+                
+                    
+                        
+                        
+                        <li id="module-fields" class="dropdown">
+                            <a href="#module-fields" class="dropdown-toggle" data-toggle="dropdown">
+                                Fields <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/BooleanField.html">BooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/CharField.html">CharField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/ChoiceField.html">ChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/ComboField.html">ComboField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/DateField.html">DateField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/DateTimeField.html">DateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/DecimalField.html">DecimalField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/DurationField.html">DurationField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/EmailField.html">EmailField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/Field.html">Field</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/FileField.html">FileField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/FilePathField.html">FilePathField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/FloatField.html">FloatField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/GenericIPAddressField.html">GenericIPAddressField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/IPAddressField.html">IPAddressField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/ImageField.html">ImageField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/IntegerField.html">IntegerField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/MultiValueField.html">MultiValueField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/MultipleChoiceField.html">MultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/NullBooleanField.html">NullBooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/RegexField.html">RegexField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/SlugField.html">SlugField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/SplitDateTimeField.html">SplitDateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/TimeField.html">TimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/TypedChoiceField.html">TypedChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/TypedMultipleChoiceField.html">TypedMultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/URLField.html">URLField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.fields/UUIDField.html">UUIDField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-forms" class="dropdown">
+                            <a href="#module-forms" class="dropdown-toggle" data-toggle="dropdown">
+                                Forms <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.8/django.forms.forms/BaseForm.html">BaseForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.forms/Form.html">Form</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-formsets" class="dropdown">
+                            <a href="#module-formsets" class="dropdown-toggle" data-toggle="dropdown">
+                                Formsets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.8/django.forms.formsets/BaseFormSet.html">BaseFormSet</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-models" class="dropdown">
+                            <a href="#module-models" class="dropdown-toggle" data-toggle="dropdown">
+                                Models <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.8/django.forms.models/BaseInlineFormSet.html">BaseInlineFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.models/BaseModelForm.html">BaseModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.models/BaseModelFormSet.html">BaseModelFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.models/ModelChoiceField.html">ModelChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.models/ModelForm.html">ModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.models/ModelMultipleChoiceField.html">ModelMultipleChoiceField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-widgets" class="dropdown">
+                            <a href="#module-widgets" class="dropdown-toggle" data-toggle="dropdown">
+                                Widgets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/CheckboxInput.html">CheckboxInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/CheckboxSelectMultiple.html">CheckboxSelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/ClearableFileInput.html">ClearableFileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/DateInput.html">DateInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/DateTimeInput.html">DateTimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/EmailInput.html">EmailInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/FileInput.html">FileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/HiddenInput.html">HiddenInput</a>
+                        </li>
+                    
+                        <li class=" active">
+                            <a href="/1.8/django.forms.widgets/Media.html">Media</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/MediaDefiningClass.html">MediaDefiningClass</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/MultiWidget.html">MultiWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/MultipleHiddenInput.html">MultipleHiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/NullBooleanSelect.html">NullBooleanSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/NumberInput.html">NumberInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/PasswordInput.html">PasswordInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/RadioSelect.html">RadioSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/Select.html">Select</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/SelectMultiple.html">SelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/SplitDateTimeWidget.html">SplitDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/SplitHiddenDateTimeWidget.html">SplitHiddenDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/TextInput.html">TextInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/Textarea.html">Textarea</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/TimeInput.html">TimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/URLInput.html">URLInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.8/django.forms.widgets/Widget.html">Widget</a>
+                        </li>
+                    
+                    
+                
+                </ul></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <article id="main">
+            
+    <h1><small>class</small>&nbsp;Media</h1>
+    <pre>from django.forms import Media</pre>
+    <div class="pull-right">
+        
+            <a class="btn btn-small btn-info" href="https://docs.djangoproject.com/en/1.8/ref/forms/widgets/#media" target="_blank">Documentation</a>
+        
+        <a class="btn btn-small btn-info" href="https://github.com/django/django/blob/stable/1.8.x/django/forms/widgets.py#L35" target="_blank">Source code</a>
+    </div>
+    
+
+            <div class="row">
+    <div class="span12">
+
+        <!-- ANCESTORS -->
+        <div class="row">
+            
+                
+                    <div class="span4">
+                    <h2>Ancestors (<abbr title="Method Resolution Order">MRO</abbr>)</h2>
+                    <ol start='0' id="ancestors">
+                        <li><strong>Media</strong></li>
+                
+                </ol></div>
+            
+        </div>
+
+        <!-- DESCENDANTS -->
+        <div class="row">
+            
+        </div>
+
+        <!-- ATTRIBUTES -->
+        <div class="row">
+            
+        </div>
+
+        <!-- PROPERTIES -->
+        <div class="row">
+            
+        </div>
+
+        <!-- METHODS -->
+        <div class="row">
+            
+                
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                    <h2>Methods</h2>
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#absolute_path">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">absolute_path</span>(<span class="n">self, path, prefix=None</span>):
+                                </code>
+                                 <a class="headerlink" href="#absolute_path" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Media</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="absolute_path" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">absolute_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">path</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s1">&#39;http://&#39;</span><span class="p">,</span> <span class="s1">&#39;https://&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="n">path</span>
+        <span class="k">if</span> <span class="n">prefix</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">settings</span><span class="o">.</span><span class="n">STATIC_URL</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+                <span class="c1"># backwards compatibility</span>
+                <span class="n">prefix</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">MEDIA_URL</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">prefix</span> <span class="o">=</span> <span class="n">settings</span><span class="o">.</span><span class="n">STATIC_URL</span>
+        <span class="k">return</span> <span class="n">urljoin</span><span class="p">(</span><span class="n">prefix</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#add_css">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">add_css</span>(<span class="n">self, data</span>):
+                                </code>
+                                 <a class="headerlink" href="#add_css" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Media</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="add_css" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">add_css</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">medium</span><span class="p">,</span> <span class="n">paths</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">paths</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_css</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">medium</span><span class="p">)</span> <span class="ow">or</span> <span class="n">path</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_css</span><span class="p">[</span><span class="n">medium</span><span class="p">]:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_css</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">medium</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#add_js">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">add_js</span>(<span class="n">self, data</span>):
+                                </code>
+                                 <a class="headerlink" href="#add_js" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Media</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="add_js" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">add_js</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">path</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_js</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_js</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#render">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">render</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#render" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Media</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="render" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">mark_safe</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chain</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;render_&#39;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)()</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">MEDIA_TYPES</span><span class="p">])))</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#render_css">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">render_css</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#render_css" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Media</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="render_css" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render_css</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># To keep rendering order consistent, we can&#39;t just iterate over items().</span>
+        <span class="c1"># We need to sort the keys, and iterate over the sorted list.</span>
+        <span class="n">media</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_css</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">chain</span><span class="p">(</span><span class="o">*</span><span class="p">[[</span>
+            <span class="n">format_html</span><span class="p">(</span>
+                <span class="s1">&#39;&lt;link href=&quot;{}&quot; type=&quot;text/css&quot; media=&quot;{}&quot; rel=&quot;stylesheet&quot; /&gt;&#39;</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">absolute_path</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">medium</span>
+            <span class="p">)</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_css</span><span class="p">[</span><span class="n">medium</span><span class="p">]</span>
+        <span class="p">]</span> <span class="k">for</span> <span class="n">medium</span> <span class="ow">in</span> <span class="n">media</span><span class="p">])</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#render_js">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">render_js</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#render_js" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Media</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="render_js" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render_js</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span>
+            <span class="n">format_html</span><span class="p">(</span>
+                <span class="s1">&#39;&lt;script type=&quot;text/javascript&quot; src=&quot;{}&quot;&gt;&lt;/script&gt;&#39;</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">absolute_path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+            <span class="p">)</span> <span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_js</span>
+        <span class="p">]</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+        </div>
+
+    </div>
+</div>
+        </article>
+        
+            <footer>
+                <hr />
+                <p>Built by <a href="http://twitter.com/anabalica" target="_blank">@anabalica</a>.</p>
+
+                <p><a href="http://github.com/anabalica/classy-django-forms/">Source code</a> and
+                <a href="https://github.com/vintasoftware/classy-django-forms/graphs/contributors">Contributors</a>
+                on <a href="http://github.com/">GitHub</a>.</p>
+
+                <p>Based on <a href="http://ccbv.co.uk/">Django Classy Class-Based Views</a> and <a href="http://www.cdrf.co/">Classy Django Rest Framework</a>.</p>
+            </footer>
+        
+    </div> <!-- /container -->
+    <script type="text/javascript">$('.dropdown-toggle').dropdown()</script>
+    
+    <script>
+        // Activate accordion
+        $(function () {
+            $(".collapse").collapse();
+            // Method collapsing/expanding buttons
+            $("#collapse-methods-btn").click(function() {
+                CCBV.method_list.collapse();
+            });
+            $("#expand-methods-btn").click(function() {
+                CCBV.method_list.expand();
+            });
+
+            function goToAnchor() {
+              var anchor = window.location.hash.replace("#", "");
+              $(".collapse").collapse('hide');
+              if (anchor) {
+                $("#" + anchor).collapse('show');
+                $('#' + anchor + ' .collapse').collapse('show');
+                setTimeout(function(){
+                  console.log($('#' + anchor).attr('class'));
+                  $('html, body').animate({
+                    scrollTop: $('#' + anchor).offset().top - 70
+                  }, 0);
+                }, 500);
+              }
+            }
+
+            $(document).ready(function() {
+              goToAnchor();
+
+              window.addEventListener("hashchange", function() { goToAnchor(); });
+
+            });
+        });
+    </script>
+    <script src="/static/ccbv.js"></script>
+
+    
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     // ga('create', 'UA-62227446-1', 'auto');
+     // ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

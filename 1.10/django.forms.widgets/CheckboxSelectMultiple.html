@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> -- Classy Django Forms</title>
+    
+    <meta name="description" content="Detailed descriptions, with full methods and attributes of  Django class.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="google-site-verification" content="qouob3hX67Bv8TpnZJzMsxaDQZP0mVk-Jv2fV9gX93s" /> -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles from Twitter Bootstrap-->
+    <link href="/static/bootstrap.css" rel="stylesheet">
+    <link href="/static/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/manni.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/jquery-1.7.1.min.js"><\/script>');</script>
+    <script src="/static/bootstrap-collapse.js"></script>
+    <script src="/static/modernizr-2.5.3.min.js"></script>
+    <script src="/static/bootstrap-dropdowns.js"></script>
+    <script>$('.dropdown-toggle').dropdown()</script>
+
+    
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">cdf</a>
+                <ul class="nav">
+
+                
+
+                <li li="version-1.10" class="dropdown">
+                    
+                        <a href="#version-1.10" class="dropdown-toggle" data-toggle="dropdown">
+                            Django 1.10 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a href="/1.8/django.forms.widgets/CheckboxSelectMultiple.html">1.8</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/1.9/django.forms.widgets/CheckboxSelectMultiple.html">1.9</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/1.11/django.forms.widgets/CheckboxSelectMultiple.html">1.11</a>
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+
+                <li class="divider-vertical"></li>
+                
+                    
+                        
+                        
+                        <li id="module-boundfield" class="dropdown">
+                            <a href="#module-boundfield" class="dropdown-toggle" data-toggle="dropdown">
+                                Boundfield <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.boundfield/BoundField.html">BoundField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-fields" class="dropdown">
+                            <a href="#module-fields" class="dropdown-toggle" data-toggle="dropdown">
+                                Fields <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/BooleanField.html">BooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/CharField.html">CharField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/ChoiceField.html">ChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/ComboField.html">ComboField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/DateField.html">DateField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/DateTimeField.html">DateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/DecimalField.html">DecimalField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/DurationField.html">DurationField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/EmailField.html">EmailField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/Field.html">Field</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/FileField.html">FileField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/FilePathField.html">FilePathField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/FloatField.html">FloatField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/GenericIPAddressField.html">GenericIPAddressField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/ImageField.html">ImageField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/IntegerField.html">IntegerField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/MultiValueField.html">MultiValueField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/MultipleChoiceField.html">MultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/NullBooleanField.html">NullBooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/RegexField.html">RegexField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/SlugField.html">SlugField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/SplitDateTimeField.html">SplitDateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/TimeField.html">TimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/TypedChoiceField.html">TypedChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/TypedMultipleChoiceField.html">TypedMultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/URLField.html">URLField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.fields/UUIDField.html">UUIDField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-forms" class="dropdown">
+                            <a href="#module-forms" class="dropdown-toggle" data-toggle="dropdown">
+                                Forms <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.forms/BaseForm.html">BaseForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.forms/Form.html">Form</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-formsets" class="dropdown">
+                            <a href="#module-formsets" class="dropdown-toggle" data-toggle="dropdown">
+                                Formsets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.formsets/BaseFormSet.html">BaseFormSet</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-models" class="dropdown">
+                            <a href="#module-models" class="dropdown-toggle" data-toggle="dropdown">
+                                Models <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/BaseInlineFormSet.html">BaseInlineFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/BaseModelForm.html">BaseModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/BaseModelFormSet.html">BaseModelFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/ModelChoiceField.html">ModelChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/ModelForm.html">ModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.models/ModelMultipleChoiceField.html">ModelMultipleChoiceField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-widgets" class="dropdown">
+                            <a href="#module-widgets" class="dropdown-toggle" data-toggle="dropdown">
+                                Widgets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/CheckboxInput.html">CheckboxInput</a>
+                        </li>
+                    
+                        <li class=" active">
+                            <a href="/1.10/django.forms.widgets/CheckboxSelectMultiple.html">CheckboxSelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/ClearableFileInput.html">ClearableFileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/DateInput.html">DateInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/DateTimeInput.html">DateTimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/EmailInput.html">EmailInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/FileInput.html">FileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/HiddenInput.html">HiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/Media.html">Media</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/MediaDefiningClass.html">MediaDefiningClass</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/MultiWidget.html">MultiWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/MultipleHiddenInput.html">MultipleHiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/NullBooleanSelect.html">NullBooleanSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/NumberInput.html">NumberInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/PasswordInput.html">PasswordInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/RadioSelect.html">RadioSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/Select.html">Select</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/SelectDateWidget.html">SelectDateWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/SelectMultiple.html">SelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/SplitDateTimeWidget.html">SplitDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/SplitHiddenDateTimeWidget.html">SplitHiddenDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/TextInput.html">TextInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/Textarea.html">Textarea</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/TimeInput.html">TimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/URLInput.html">URLInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="/1.10/django.forms.widgets/Widget.html">Widget</a>
+                        </li>
+                    
+                    
+                
+                </ul></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <article id="main">
+            
+    <h1><small>class</small>&nbsp;CheckboxSelectMultiple</h1>
+    <pre>from django.forms import CheckboxSelectMultiple</pre>
+    <div class="pull-right">
+        
+            <a class="btn btn-small btn-info" href="https://docs.djangoproject.com/en/1.10/ref/forms/widgets/#checkboxselectmultiple" target="_blank">Documentation</a>
+        
+        <a class="btn btn-small btn-info" href="https://github.com/django/django/blob/stable/1.10.x/django/forms/widgets.py#L817" target="_blank">Source code</a>
+    </div>
+    
+
+            <div class="row">
+    <div class="span12">
+
+        <!-- ANCESTORS -->
+        <div class="row">
+            
+                
+                    <div class="span4">
+                    <h2>Ancestors (<abbr title="Method Resolution Order">MRO</abbr>)</h2>
+                    <ol start='0' id="ancestors">
+                        <li><strong>CheckboxSelectMultiple</strong></li>
+                
+                
+            
+                
+                        <li>
+                            <a href="/1.10/django.forms.widgets/RendererMixin.html" class="direct">
+                                RendererMixin
+                            </a>
+                        </li>
+                
+                
+            
+                
+                        <li>
+                            <a href="/1.10/django.forms.widgets/SelectMultiple.html" class="direct">
+                                SelectMultiple
+                            </a>
+                        </li>
+                
+                
+            
+                
+                        <li>
+                            <a href="/1.10/django.forms.widgets/Select.html" class="">
+                                Select
+                            </a>
+                        </li>
+                
+                
+            
+                
+                        <li>
+                            <a href="/1.10/django.forms.widgets/Widget.html" class="">
+                                Widget
+                            </a>
+                        </li>
+                
+                </ol></div>
+            
+        </div>
+
+        <!-- DESCENDANTS -->
+        <div class="row">
+            
+        </div>
+
+        <!-- ATTRIBUTES -->
+        <div class="row">
+            
+                
+                    <div class="span12">
+                        <h2>Attributes</h2>
+                        <table class="table table-striped table-bordered table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Defined in</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>_empty_value</strong> = []
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        CheckboxSelectMultiple
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute overridden">
+                                        <strong>_empty_value</strong> = None
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="/1.10/django.forms.widgets/RendererMixin.html">RendererMixin</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>allow_multiple_selected</strong> = True
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="/1.10/django.forms.widgets/SelectMultiple.html">SelectMultiple</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute overridden">
+                                        <strong>allow_multiple_selected</strong> = False
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="/1.10/django.forms.widgets/Select.html">Select</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>is_localized</strong> = False
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="/1.10/django.forms.widgets/Widget.html">Widget</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>is_required</strong> = False
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="/1.10/django.forms.widgets/Widget.html">Widget</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>needs_multipart_form</strong> = False
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="/1.10/django.forms.widgets/Widget.html">Widget</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>renderer</strong> = None
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="/1.10/django.forms.widgets/RendererMixin.html">RendererMixin</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>supports_microseconds</strong> = True
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="/1.10/django.forms.widgets/Widget.html">Widget</a>
+                                    
+                                </td>
+                            </tr>
+                
+                            </tbody>
+                        </table>
+                    </div>
+                
+            
+        </div>
+
+        <!-- PROPERTIES -->
+        <div class="row">
+            
+                
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                <h2>Properties</h2>
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#is_hidden">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">is_hidden</span>():
+                                </code>
+                                 <a class="headerlink" href="#is_hidden" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Widget</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="is_hidden" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#is_hidden-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="is_hidden-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_hidden</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">input_type</span> <span class="o">==</span> <span class="s1">&#39;hidden&#39;</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;input_type&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="bp">False</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#media">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">media</span>():
+                                </code>
+                                 <a class="headerlink" href="#media" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">CheckboxSelectMultiple</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="media" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#media-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="media-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">_media</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Get the media property of the superclass, if it exists</span>
+        <span class="n">sup_cls</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">sup_cls</span><span class="o">.</span><span class="n">media</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">Media</span><span class="p">()</span>
+
+        <span class="c1"># Get the media definition for this class</span>
+        <span class="n">definition</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;Media&#39;</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">definition</span><span class="p">:</span>
+            <span class="n">extend</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">definition</span><span class="p">,</span> <span class="s1">&#39;extend&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">extend</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">extend</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span>
+                    <span class="n">m</span> <span class="o">=</span> <span class="n">base</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">m</span> <span class="o">=</span> <span class="n">Media</span><span class="p">()</span>
+                    <span class="k">for</span> <span class="n">medium</span> <span class="ow">in</span> <span class="n">extend</span><span class="p">:</span>
+                        <span class="n">m</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="n">base</span><span class="p">[</span><span class="n">medium</span><span class="p">]</span>
+                <span class="k">return</span> <span class="n">m</span> <span class="o">+</span> <span class="n">Media</span><span class="p">(</span><span class="n">definition</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">Media</span><span class="p">(</span><span class="n">definition</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">base</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#media">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">media</span>():
+                                </code>
+                                 <a class="headerlink" href="#media" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">SelectMultiple</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="media" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#media-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="media-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">_media</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Get the media property of the superclass, if it exists</span>
+        <span class="n">sup_cls</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">sup_cls</span><span class="o">.</span><span class="n">media</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">Media</span><span class="p">()</span>
+
+        <span class="c1"># Get the media definition for this class</span>
+        <span class="n">definition</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;Media&#39;</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">definition</span><span class="p">:</span>
+            <span class="n">extend</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">definition</span><span class="p">,</span> <span class="s1">&#39;extend&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">extend</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">extend</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span>
+                    <span class="n">m</span> <span class="o">=</span> <span class="n">base</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">m</span> <span class="o">=</span> <span class="n">Media</span><span class="p">()</span>
+                    <span class="k">for</span> <span class="n">medium</span> <span class="ow">in</span> <span class="n">extend</span><span class="p">:</span>
+                        <span class="n">m</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="n">base</span><span class="p">[</span><span class="n">medium</span><span class="p">]</span>
+                <span class="k">return</span> <span class="n">m</span> <span class="o">+</span> <span class="n">Media</span><span class="p">(</span><span class="n">definition</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">Media</span><span class="p">(</span><span class="n">definition</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">base</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#media">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">media</span>():
+                                </code>
+                                 <a class="headerlink" href="#media" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Select</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="media" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#media-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="media-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">_media</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Get the media property of the superclass, if it exists</span>
+        <span class="n">sup_cls</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">sup_cls</span><span class="o">.</span><span class="n">media</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">Media</span><span class="p">()</span>
+
+        <span class="c1"># Get the media definition for this class</span>
+        <span class="n">definition</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;Media&#39;</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">definition</span><span class="p">:</span>
+            <span class="n">extend</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">definition</span><span class="p">,</span> <span class="s1">&#39;extend&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">extend</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">extend</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span>
+                    <span class="n">m</span> <span class="o">=</span> <span class="n">base</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">m</span> <span class="o">=</span> <span class="n">Media</span><span class="p">()</span>
+                    <span class="k">for</span> <span class="n">medium</span> <span class="ow">in</span> <span class="n">extend</span><span class="p">:</span>
+                        <span class="n">m</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="n">base</span><span class="p">[</span><span class="n">medium</span><span class="p">]</span>
+                <span class="k">return</span> <span class="n">m</span> <span class="o">+</span> <span class="n">Media</span><span class="p">(</span><span class="n">definition</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">Media</span><span class="p">(</span><span class="n">definition</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">base</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#media">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">media</span>():
+                                </code>
+                                 <a class="headerlink" href="#media" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Widget</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="media" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#media-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="media-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">_media</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Get the media property of the superclass, if it exists</span>
+        <span class="n">sup_cls</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">sup_cls</span><span class="o">.</span><span class="n">media</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">Media</span><span class="p">()</span>
+
+        <span class="c1"># Get the media definition for this class</span>
+        <span class="n">definition</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="s1">&#39;Media&#39;</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">definition</span><span class="p">:</span>
+            <span class="n">extend</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">definition</span><span class="p">,</span> <span class="s1">&#39;extend&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">extend</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">extend</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span>
+                    <span class="n">m</span> <span class="o">=</span> <span class="n">base</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">m</span> <span class="o">=</span> <span class="n">Media</span><span class="p">()</span>
+                    <span class="k">for</span> <span class="n">medium</span> <span class="ow">in</span> <span class="n">extend</span><span class="p">:</span>
+                        <span class="n">m</span> <span class="o">=</span> <span class="n">m</span> <span class="o">+</span> <span class="n">base</span><span class="p">[</span><span class="n">medium</span><span class="p">]</span>
+                <span class="k">return</span> <span class="n">m</span> <span class="o">+</span> <span class="n">Media</span><span class="p">(</span><span class="n">definition</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">Media</span><span class="p">(</span><span class="n">definition</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">base</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+        </div>
+
+        <!-- METHODS -->
+        <div class="row">
+            
+                
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                    <h2>Methods</h2>
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#build_attrs">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">build_attrs</span>(<span class="n">self, extra_attrs=None, **kwargs</span>):
+                                </code>
+                                 <a class="headerlink" href="#build_attrs" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Widget</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="build_attrs" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">Helper function for building an attribute dictionary.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">build_attrs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">extra_attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="s2">&quot;Helper function for building an attribute dictionary.&quot;</span>
+        <span class="n">attrs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">attrs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">extra_attrs</span><span class="p">:</span>
+            <span class="n">attrs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">extra_attrs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">attrs</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#get_renderer">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">get_renderer</span>(<span class="n">self, name, value, attrs=None</span>):
+                                </code>
+                                 <a class="headerlink" href="#get_renderer" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">RendererMixin</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="get_renderer" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">Returns an instance of the renderer.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">get_renderer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns an instance of the renderer.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_empty_value</span>
+        <span class="n">final_attrs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_attrs</span><span class="p">(</span><span class="n">attrs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">renderer</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">final_attrs</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">choices</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#id_for_label">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">id_for_label</span>(<span class="n">self, id_</span>):
+                                </code>
+                                 <a class="headerlink" href="#id_for_label" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="id_for_label" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#id_for_label-RendererMixin">
+                                            <h4 class="accordion-toggle">RendererMixin</h4>
+                                        </header>
+                                        <div id="id_for_label-RendererMixin" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">id_for_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">id_</span><span class="p">):</span>
+        <span class="c1"># Widgets using this RendererMixin are made of a collection of</span>
+        <span class="c1"># subwidgets, each with their own &lt;label&gt;, and distinct ID.</span>
+        <span class="c1"># The IDs are made distinct by a &quot;_X&quot; suffix, where X is the zero-based</span>
+        <span class="c1"># index of the choice field. Thus, the label for the main widget should</span>
+        <span class="c1"># reference the first subwidget, hence the &quot;_0&quot; suffix.</span>
+        <span class="k">if</span> <span class="n">id_</span><span class="p">:</span>
+            <span class="n">id_</span> <span class="o">+=</span> <span class="s1">&#39;_0&#39;</span>
+        <span class="k">return</span> <span class="n">id_</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#id_for_label-Widget">
+                                            <h4 class="accordion-toggle">Widget</h4>
+                                        </header>
+                                        <div id="id_for_label-Widget" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                <pre class="docstring">
+        Returns the HTML ID attribute of this Widget for use by a &lt;label&gt;,
+        given the ID of the field. Returns None if no ID is available.
+
+        This hook is necessary because some widgets have multiple HTML
+        elements and, thus, multiple IDs. In that case, this method should
+        return an ID value that corresponds to the first ID in the widget&#39;s
+        tags.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">id_for_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">id_</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the HTML ID attribute of this Widget for use by a &lt;label&gt;,</span>
+<span class="sd">        given the ID of the field. Returns None if no ID is available.</span>
+
+<span class="sd">        This hook is necessary because some widgets have multiple HTML</span>
+<span class="sd">        elements and, thus, multiple IDs. In that case, this method should</span>
+<span class="sd">        return an ID value that corresponds to the first ID in the widget&#39;s</span>
+<span class="sd">        tags.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">id_</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#render">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">render</span>(<span class="n">self, name, value, attrs=None</span>):
+                                </code>
+                                 <a class="headerlink" href="#render" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="render" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#render-RendererMixin">
+                                            <h4 class="accordion-toggle">RendererMixin</h4>
+                                        </header>
+                                        <div id="render-RendererMixin" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_renderer</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">)</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#render-SelectMultiple">
+                                            <h4 class="accordion-toggle">SelectMultiple</h4>
+                                        </header>
+                                        <div id="render-SelectMultiple" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">final_attrs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_attrs</span><span class="p">(</span><span class="n">attrs</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[</span><span class="n">format_html</span><span class="p">(</span><span class="s1">&#39;&lt;select multiple=&quot;multiple&quot;{}&gt;&#39;</span><span class="p">,</span> <span class="n">flatatt</span><span class="p">(</span><span class="n">final_attrs</span><span class="p">))]</span>
+        <span class="n">options</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">render_options</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">options</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;/select&gt;&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mark_safe</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output</span><span class="p">))</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#render-Select">
+                                            <h4 class="accordion-toggle">Select</h4>
+                                        </header>
+                                        <div id="render-Select" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">final_attrs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_attrs</span><span class="p">(</span><span class="n">attrs</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[</span><span class="n">format_html</span><span class="p">(</span><span class="s1">&#39;&lt;select{}&gt;&#39;</span><span class="p">,</span> <span class="n">flatatt</span><span class="p">(</span><span class="n">final_attrs</span><span class="p">))]</span>
+        <span class="n">options</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">render_options</span><span class="p">([</span><span class="n">value</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">options</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;/select&gt;&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mark_safe</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output</span><span class="p">))</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#render-Widget">
+                                            <h4 class="accordion-toggle">Widget</h4>
+                                        </header>
+                                        <div id="render-Widget" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                <pre class="docstring">
+        Returns this Widget rendered as HTML, as a Unicode string.
+
+        The &#39;value&#39; given is not guaranteed to be valid input, so subclass
+        implementations should program defensively.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns this Widget rendered as HTML, as a Unicode string.</span>
+
+<span class="sd">        The &#39;value&#39; given is not guaranteed to be valid input, so subclass</span>
+<span class="sd">        implementations should program defensively.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s1">&#39;subclasses of Widget must provide a render() method&#39;</span><span class="p">)</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#render_option">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">render_option</span>(<span class="n">self, selected_choices, option_value, option_label</span>):
+                                </code>
+                                 <a class="headerlink" href="#render_option" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Select</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="render_option" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render_option</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">selected_choices</span><span class="p">,</span> <span class="n">option_value</span><span class="p">,</span> <span class="n">option_label</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">option_value</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">option_value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">option_value</span> <span class="o">=</span> <span class="n">force_text</span><span class="p">(</span><span class="n">option_value</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">option_value</span> <span class="ow">in</span> <span class="n">selected_choices</span><span class="p">:</span>
+            <span class="n">selected_html</span> <span class="o">=</span> <span class="n">mark_safe</span><span class="p">(</span><span class="s1">&#39; selected=&quot;selected&quot;&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">allow_multiple_selected</span><span class="p">:</span>
+                <span class="c1"># Only allow for a single selection.</span>
+                <span class="n">selected_choices</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">option_value</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">selected_html</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">return</span> <span class="n">format_html</span><span class="p">(</span><span class="s1">&#39;&lt;option value=&quot;{}&quot;{}&gt;{}&lt;/option&gt;&#39;</span><span class="p">,</span> <span class="n">option_value</span><span class="p">,</span> <span class="n">selected_html</span><span class="p">,</span> <span class="n">force_text</span><span class="p">(</span><span class="n">option_label</span><span class="p">))</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#render_options">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">render_options</span>(<span class="n">self, selected_choices</span>):
+                                </code>
+                                 <a class="headerlink" href="#render_options" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Select</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="render_options" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">render_options</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">selected_choices</span><span class="p">):</span>
+        <span class="c1"># Normalize to strings.</span>
+        <span class="n">selected_choices</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">force_text</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">selected_choices</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">option_value</span><span class="p">,</span> <span class="n">option_label</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">choices</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">option_label</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
+                <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">format_html</span><span class="p">(</span><span class="s1">&#39;&lt;optgroup label=&quot;{}&quot;&gt;&#39;</span><span class="p">,</span> <span class="n">force_text</span><span class="p">(</span><span class="n">option_value</span><span class="p">)))</span>
+                <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">option_label</span><span class="p">:</span>
+                    <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">render_option</span><span class="p">(</span><span class="n">selected_choices</span><span class="p">,</span> <span class="o">*</span><span class="n">option</span><span class="p">))</span>
+                <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;/optgroup&gt;&#39;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">render_option</span><span class="p">(</span><span class="n">selected_choices</span><span class="p">,</span> <span class="n">option_value</span><span class="p">,</span> <span class="n">option_label</span><span class="p">))</span>
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#subwidgets">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">subwidgets</span>(<span class="n">self, name, value, attrs=None</span>):
+                                </code>
+                                 <a class="headerlink" href="#subwidgets" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="subwidgets" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#subwidgets-RendererMixin">
+                                            <h4 class="accordion-toggle">RendererMixin</h4>
+                                        </header>
+                                        <div id="subwidgets-RendererMixin" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">subwidgets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_renderer</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
+            <span class="k">yield</span> <span class="n">widget</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#subwidgets-Widget">
+                                            <h4 class="accordion-toggle">Widget</h4>
+                                        </header>
+                                        <div id="subwidgets-Widget" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                <pre class="docstring">
+        Yields all &#34;subwidgets&#34; of this widget. Used only by RadioSelect to
+        allow template access to individual &lt;input type=&#34;radio&#34;&gt; buttons.
+
+        Arguments are the same as for render().
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">subwidgets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="p">()):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Yields all &quot;subwidgets&quot; of this widget. Used only by RadioSelect to</span>
+<span class="sd">        allow template access to individual &lt;input type=&quot;radio&quot;&gt; buttons.</span>
+
+<span class="sd">        Arguments are the same as for render().</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">yield</span> <span class="n">SubWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">attrs</span><span class="p">,</span> <span class="n">choices</span><span class="p">)</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#use_required_attribute">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">use_required_attribute</span>(<span class="n">self, initial</span>):
+                                </code>
+                                 <a class="headerlink" href="#use_required_attribute" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="use_required_attribute" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#use_required_attribute-CheckboxSelectMultiple">
+                                            <h4 class="accordion-toggle">CheckboxSelectMultiple</h4>
+                                        </header>
+                                        <div id="use_required_attribute-CheckboxSelectMultiple" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">use_required_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">initial</span><span class="p">):</span>
+        <span class="c1"># Don&#39;t use the &#39;required&#39; attribute because browser validation would</span>
+        <span class="c1"># require all checkboxes to be checked instead of at least one.</span>
+        <span class="k">return</span> <span class="bp">False</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#use_required_attribute-Widget">
+                                            <h4 class="accordion-toggle">Widget</h4>
+                                        </header>
+                                        <div id="use_required_attribute-Widget" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">use_required_attribute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">initial</span><span class="p">):</span>
+        <span class="k">return</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_hidden</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#value_from_datadict">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">value_from_datadict</span>(<span class="n">self, data, files, name</span>):
+                                </code>
+                                 <a class="headerlink" href="#value_from_datadict" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="value_from_datadict" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#value_from_datadict-SelectMultiple">
+                                            <h4 class="accordion-toggle">SelectMultiple</h4>
+                                        </header>
+                                        <div id="value_from_datadict-SelectMultiple" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">value_from_datadict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">MultiValueDict</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">getlist</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#value_from_datadict-Widget">
+                                            <h4 class="accordion-toggle">Widget</h4>
+                                        </header>
+                                        <div id="value_from_datadict-Widget" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                <pre class="docstring">
+        Given a dictionary of data and this widget&#39;s name, returns the value
+        of this widget. Returns None if it&#39;s not provided.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">value_from_datadict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Given a dictionary of data and this widget&#39;s name, returns the value</span>
+<span class="sd">        of this widget. Returns None if it&#39;s not provided.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#value_omitted_from_data">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">value_omitted_from_data</span>(<span class="n">self, data, files, name</span>):
+                                </code>
+                                 <a class="headerlink" href="#value_omitted_from_data" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="value_omitted_from_data" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#value_omitted_from_data-CheckboxSelectMultiple">
+                                            <h4 class="accordion-toggle">CheckboxSelectMultiple</h4>
+                                        </header>
+                                        <div id="value_omitted_from_data-CheckboxSelectMultiple" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">value_omitted_from_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="c1"># HTML checkboxes don&#39;t appear in POST data if not checked, so it&#39;s</span>
+        <span class="c1"># never known if the value is actually omitted.</span>
+        <span class="k">return</span> <span class="bp">False</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#value_omitted_from_data-SelectMultiple">
+                                            <h4 class="accordion-toggle">SelectMultiple</h4>
+                                        </header>
+                                        <div id="value_omitted_from_data-SelectMultiple" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">value_omitted_from_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="c1"># An unselected &lt;select multiple&gt; doesn&#39;t appear in POST data, so it&#39;s</span>
+        <span class="c1"># never known if the value is actually omitted.</span>
+        <span class="k">return</span> <span class="bp">False</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#value_omitted_from_data-Widget">
+                                            <h4 class="accordion-toggle">Widget</h4>
+                                        </header>
+                                        <div id="value_omitted_from_data-Widget" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">value_omitted_from_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">files</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+        </div>
+
+    </div>
+</div>
+        </article>
+        
+            <footer>
+                <hr />
+                <p>Built by <a href="http://twitter.com/anabalica" target="_blank">@anabalica</a>.</p>
+
+                <p><a href="http://github.com/anabalica/classy-django-forms/">Source code</a> and
+                <a href="https://github.com/vintasoftware/classy-django-forms/graphs/contributors">Contributors</a>
+                on <a href="http://github.com/">GitHub</a>.</p>
+
+                <p>Based on <a href="http://ccbv.co.uk/">Django Classy Class-Based Views</a> and <a href="http://www.cdrf.co/">Classy Django Rest Framework</a>.</p>
+            </footer>
+        
+    </div> <!-- /container -->
+    <script type="text/javascript">$('.dropdown-toggle').dropdown()</script>
+    
+    <script>
+        // Activate accordion
+        $(function () {
+            $(".collapse").collapse();
+            // Method collapsing/expanding buttons
+            $("#collapse-methods-btn").click(function() {
+                CCBV.method_list.collapse();
+            });
+            $("#expand-methods-btn").click(function() {
+                CCBV.method_list.expand();
+            });
+
+            function goToAnchor() {
+              var anchor = window.location.hash.replace("#", "");
+              $(".collapse").collapse('hide');
+              if (anchor) {
+                $("#" + anchor).collapse('show');
+                $('#' + anchor + ' .collapse').collapse('show');
+                setTimeout(function(){
+                  console.log($('#' + anchor).attr('class'));
+                  $('html, body').animate({
+                    scrollTop: $('#' + anchor).offset().top - 70
+                  }, 0);
+                }, 500);
+              }
+            }
+
+            $(document).ready(function() {
+              goToAnchor();
+
+              window.addEventListener("hashchange", function() { goToAnchor(); });
+
+            });
+        });
+    </script>
+    <script src="/static/ccbv.js"></script>
+
+    
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     // ga('create', 'UA-62227446-1', 'auto');
+     // ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
