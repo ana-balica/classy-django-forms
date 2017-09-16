@@ -54,6 +54,7 @@ class DetailsPageRenderer(BasicPageRenderer):
         properties = self.inspector.get_properties()
         context['properties'] = properties
         context['methods'] = self.inspector.get_methods(properties)
+        return context
 
 
 class SitemapRenderer(BasicPageRenderer):
