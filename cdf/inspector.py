@@ -1,3 +1,4 @@
+import collections
 import inspect
 import json
 import types
@@ -117,6 +118,37 @@ class Property:
         return highlight(code, PythonLexer(), CodeHtmlFormatter(self.instance_class))
 
 
+class KlassItems(collections.MutableSequence):
+
+    def __init__(self):
+        self.items = []
+
+    def __getitem__(self, index):
+        return self.items[index]
+
+    def __setitem__(self, index, value):
+        if index < len(self.items) or not isinstance(index, int):
+            raise ValueError("Can't change value of position")
+
+        try:
+            existing_item = next(x for x in self.items if x.name == value.name)
+            existing_item.children.append(value)
+        except StopIteration:
+            self.items.append(value)
+
+    def __delitem__(self, index):
+        del self.items[index]
+
+    def __len__(self):
+        return len(self.items)
+
+    def insert(self, index, value):
+        self.__setitem__(index, value)
+
+    def sort(self, *args, **kwargs):
+        self.items.sort(*args, **kwargs)
+
+
 class Inspector:
 
     def __init__(self, klass):
@@ -213,17 +245,17 @@ class Inspector:
         Get all class methods, exclude getter / setter / deleter methods
         of any class properties.
         """
-        methods = []
+        methods = KlassItems()
         properties_accessors = self._get_properties_accessors(properties or [])
 
         for klass in self.get_ancestors():
-            for attr_str in klass.__dict__.keys():
-                if not attr_str.startswith('__'):
-                    attr_value = getattr(klass, attr_str)
-                    if isinstance(attr_value, types.FunctionType) and attr_value not in properties_accessors:
+            for method_name in klass.__dict__.keys():
+                if not method_name.startswith('__'):
+                    method_value = getattr(klass, method_name)
+                    if isinstance(method_value, types.FunctionType) and method_value not in properties_accessors:
                         method = Method(
-                            name=attr_str,
-                            value=attr_value,
+                            name=method_name,
+                            value=method_value,
                             classobject=klass,
                             instance_class=self.klass
                         )
