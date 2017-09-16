@@ -3,7 +3,7 @@
         {% if current_module !=  module or loop.first %}
             {% if not loop.first %}</ul></div>{% endif %}
             {% set module_short_name = module.__name__.split('.')[-1] %}
-            {# {% if module_short_name == 'serializers' %}</div><div class="span{{ column_width }}">{% endif %} #}
+            {% if module_short_name == 'formsets' %}</div><div class="span{{ column_width }}">{% endif %}
             <div class="well skinny klass-list">
             <ul class="nav nav-list">
             <li class="nav-header"><h3>{{ module_short_name }}</h3></li>
