@@ -1,218 +1,202 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://someurl.com/</loc>
+        <loc>https://ana-balica.github.io/classy-django-forms//</loc>
         <priority>1.0</priority>
     </url>
     
         
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/BooleanField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/BooleanField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/CharField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/CharField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/ChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/ChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/ComboField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/ComboField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/DateField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/DateField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/DateTimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/DateTimeField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/DecimalField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/DecimalField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/DurationField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/DurationField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/EmailField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/EmailField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/Field.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/Field.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/FileField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/FileField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/FilePathField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/FilePathField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/FloatField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/FloatField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/GenericIPAddressField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/GenericIPAddressField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/IPAddressField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/IPAddressField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/ImageField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/ImageField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/IntegerField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/IntegerField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/MultiValueField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/MultiValueField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/MultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/MultipleChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/NullBooleanField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/NullBooleanField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/RegexField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/RegexField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/SlugField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/SlugField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/SplitDateTimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/SplitDateTimeField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/TimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/TimeField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/TypedChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/TypedChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/TypedMultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/TypedMultipleChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/URLField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/URLField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.fields/UUIDField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-        
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.forms/BaseForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.forms/Form.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.fields/UUIDField.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -221,7 +205,14 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.formsets/BaseFormSet.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.forms/BaseForm.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.forms/Form.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -230,42 +221,7 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.models/BaseInlineFormSet.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.models/BaseModelForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.models/BaseModelFormSet.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.models/ModelChoiceField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.models/ModelForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.models/ModelMultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.formsets/BaseFormSet.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -274,186 +230,42 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/CheckboxInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.models/BaseInlineFormSet.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/CheckboxSelectMultiple.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.models/BaseModelForm.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/ClearableFileInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.models/BaseModelFormSet.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/DateInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.models/ModelChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/DateTimeInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.models/ModelForm.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/EmailInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/FileInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/HiddenInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/Media.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/MediaDefiningClass.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/MultiWidget.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/MultipleHiddenInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/NullBooleanSelect.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/NumberInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/PasswordInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/RadioSelect.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/Select.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/SelectMultiple.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/SplitDateTimeWidget.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/SplitHiddenDateTimeWidget.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/TextInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/Textarea.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/TimeInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/URLInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.8/django.forms.widgets/Widget.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-        
-    
-        
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.boundfield/BoundField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.models/ModelMultipleChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -462,442 +274,175 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/BooleanField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/CheckboxInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/CharField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/CheckboxSelectMultiple.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/ChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/ClearableFileInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/ComboField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/DateInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/DateField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/DateTimeInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/DateTimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/EmailInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/DecimalField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/FileInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/DurationField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/HiddenInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/EmailField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/Media.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/Field.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/MediaDefiningClass.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/FileField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/MultiWidget.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/FilePathField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/MultipleHiddenInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/FloatField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/NullBooleanSelect.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/GenericIPAddressField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/NumberInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/ImageField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/PasswordInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/IntegerField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/RadioSelect.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/MultiValueField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/Select.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/MultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/SelectMultiple.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/NullBooleanField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/SplitDateTimeWidget.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/RegexField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/SplitHiddenDateTimeWidget.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/SlugField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/TextInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/SplitDateTimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/Textarea.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/TimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/TimeInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/TypedChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/URLInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/TypedMultipleChoiceField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/URLField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.fields/UUIDField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-        
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.forms/BaseForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.forms/Form.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-        
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.formsets/BaseFormSet.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-        
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.models/BaseInlineFormSet.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.models/BaseModelForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.models/BaseModelFormSet.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.models/ModelChoiceField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.models/ModelForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.models/ModelMultipleChoiceField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-        
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/CheckboxInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/CheckboxSelectMultiple.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/ClearableFileInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/DateInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/DateTimeInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/EmailInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/FileInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/HiddenInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/Media.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/MediaDefiningClass.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/MultiWidget.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/MultipleHiddenInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/NullBooleanSelect.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/NumberInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/PasswordInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/RadioSelect.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/Select.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/SelectDateWidget.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/SelectMultiple.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/SplitDateTimeWidget.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/SplitHiddenDateTimeWidget.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/TextInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/Textarea.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/TimeInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/URLInput.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.9/django.forms.widgets/Widget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.8/django.forms.widgets/Widget.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -908,7 +453,7 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.boundfield/BoundField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.boundfield/BoundField.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -917,205 +462,189 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/BooleanField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/BooleanField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/CharField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/CharField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/ChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/ChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/ComboField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/ComboField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/DateField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/DateField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/DateTimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/DateTimeField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/DecimalField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/DecimalField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/DurationField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/DurationField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/EmailField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/EmailField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/Field.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/Field.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/FileField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/FileField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/FilePathField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/FilePathField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/FloatField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/FloatField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/GenericIPAddressField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/GenericIPAddressField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/ImageField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/ImageField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/IntegerField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/IntegerField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/MultiValueField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/MultiValueField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/MultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/MultipleChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/NullBooleanField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/NullBooleanField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/RegexField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/RegexField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/SlugField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/SlugField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/SplitDateTimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/SplitDateTimeField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/TimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/TimeField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/TypedChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/TypedChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/TypedMultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/TypedMultipleChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/URLField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/URLField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.fields/UUIDField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-        
-            
-                <url>
-                    <loc>http://someurl.com/1.10/django.forms.forms/BaseForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.10/django.forms.forms/Form.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.fields/UUIDField.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -1124,7 +653,14 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.formsets/BaseFormSet.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.forms/BaseForm.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.forms/Form.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -1133,42 +669,7 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.models/BaseInlineFormSet.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.10/django.forms.models/BaseModelForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.10/django.forms.models/BaseModelFormSet.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.10/django.forms.models/ModelChoiceField.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.10/django.forms.models/ModelForm.html</loc>
-                    
-                        <priority>0.5</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.10/django.forms.models/ModelMultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.formsets/BaseFormSet.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -1177,182 +678,226 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/CheckboxInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.models/BaseInlineFormSet.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/CheckboxSelectMultiple.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.models/BaseModelForm.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/ClearableFileInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.models/BaseModelFormSet.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/DateInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.models/ModelChoiceField.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/DateTimeInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.models/ModelForm.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/EmailInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.models/ModelMultipleChoiceField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+        
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/CheckboxInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/FileInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/CheckboxSelectMultiple.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/HiddenInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/ClearableFileInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/Media.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/DateInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/MediaDefiningClass.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/DateTimeInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/MultiWidget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/EmailInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/MultipleHiddenInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/FileInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/NullBooleanSelect.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/HiddenInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/NumberInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/Media.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/PasswordInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/MediaDefiningClass.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/RadioSelect.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/MultiWidget.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/Select.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/MultipleHiddenInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/SelectDateWidget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/NullBooleanSelect.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/SelectMultiple.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/NumberInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/SplitDateTimeWidget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/PasswordInput.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/SplitHiddenDateTimeWidget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/RadioSelect.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/TextInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/Select.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/Textarea.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/SelectDateWidget.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/TimeInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/SelectMultiple.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/URLInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/SplitDateTimeWidget.html</loc>
                     
                         <priority>0.5</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.10/django.forms.widgets/Widget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/SplitHiddenDateTimeWidget.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/TextInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/Textarea.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/TimeInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/URLInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.9/django.forms.widgets/Widget.html</loc>
                     
                         <priority>0.5</priority>
                     
@@ -1363,7 +908,462 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.boundfield/BoundField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.boundfield/BoundField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+        
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/BooleanField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/CharField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/ChoiceField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/ComboField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/DateField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/DateTimeField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/DecimalField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/DurationField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/EmailField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/Field.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/FileField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/FilePathField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/FloatField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/GenericIPAddressField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/ImageField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/IntegerField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/MultiValueField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/MultipleChoiceField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/NullBooleanField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/RegexField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/SlugField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/SplitDateTimeField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/TimeField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/TypedChoiceField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/TypedMultipleChoiceField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/URLField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.fields/UUIDField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+        
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.forms/BaseForm.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.forms/Form.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+        
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.formsets/BaseFormSet.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+        
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.models/BaseInlineFormSet.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.models/BaseModelForm.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.models/BaseModelFormSet.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.models/ModelChoiceField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.models/ModelForm.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.models/ModelMultipleChoiceField.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+        
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/CheckboxInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/CheckboxSelectMultiple.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/ClearableFileInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/DateInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/DateTimeInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/EmailInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/FileInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/HiddenInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/Media.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/MediaDefiningClass.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/MultiWidget.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/MultipleHiddenInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/NullBooleanSelect.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/NumberInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/PasswordInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/RadioSelect.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/Select.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/SelectDateWidget.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/SelectMultiple.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/SplitDateTimeWidget.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/SplitHiddenDateTimeWidget.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/TextInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/Textarea.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/TimeInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/URLInput.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.10/django.forms.widgets/Widget.html</loc>
+                    
+                        <priority>0.5</priority>
+                    
+                </url>
+            
+        
+    
+        
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.boundfield/BoundField.html</loc>
                     
                         <priority>0.9</priority>
                     
@@ -1372,205 +1372,189 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/BooleanField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/BooleanField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/CharField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/CharField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/ChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/ChoiceField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/ComboField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/ComboField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/DateField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/DateField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/DateTimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/DateTimeField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/DecimalField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/DecimalField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/DurationField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/DurationField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/EmailField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/EmailField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/Field.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/Field.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/FileField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/FileField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/FilePathField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/FilePathField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/FloatField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/FloatField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/GenericIPAddressField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/GenericIPAddressField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/ImageField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/ImageField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/IntegerField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/IntegerField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/MultiValueField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/MultiValueField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/MultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/MultipleChoiceField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/NullBooleanField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/NullBooleanField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/RegexField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/RegexField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/SlugField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/SlugField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/SplitDateTimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/SplitDateTimeField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/TimeField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/TimeField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/TypedChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/TypedChoiceField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/TypedMultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/TypedMultipleChoiceField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/URLField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/URLField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.fields/UUIDField.html</loc>
-                    
-                        <priority>0.9</priority>
-                    
-                </url>
-            
-        
-            
-                <url>
-                    <loc>http://someurl.com/1.11/django.forms.forms/BaseForm.html</loc>
-                    
-                        <priority>0.9</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.11/django.forms.forms/Form.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.fields/UUIDField.html</loc>
                     
                         <priority>0.9</priority>
                     
@@ -1579,7 +1563,14 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.formsets/BaseFormSet.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.forms/BaseForm.html</loc>
+                    
+                        <priority>0.9</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.forms/Form.html</loc>
                     
                         <priority>0.9</priority>
                     
@@ -1588,42 +1579,7 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.models/BaseInlineFormSet.html</loc>
-                    
-                        <priority>0.9</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.11/django.forms.models/BaseModelForm.html</loc>
-                    
-                        <priority>0.9</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.11/django.forms.models/BaseModelFormSet.html</loc>
-                    
-                        <priority>0.9</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.11/django.forms.models/ModelChoiceField.html</loc>
-                    
-                        <priority>0.9</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.11/django.forms.models/ModelForm.html</loc>
-                    
-                        <priority>0.9</priority>
-                    
-                </url>
-            
-                <url>
-                    <loc>http://someurl.com/1.11/django.forms.models/ModelMultipleChoiceField.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.formsets/BaseFormSet.html</loc>
                     
                         <priority>0.9</priority>
                     
@@ -1632,182 +1588,226 @@
         
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/CheckboxInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.models/BaseInlineFormSet.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/CheckboxSelectMultiple.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.models/BaseModelForm.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/ClearableFileInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.models/BaseModelFormSet.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/DateInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.models/ModelChoiceField.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/DateTimeInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.models/ModelForm.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/EmailInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.models/ModelMultipleChoiceField.html</loc>
+                    
+                        <priority>0.9</priority>
+                    
+                </url>
+            
+        
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/CheckboxInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/FileInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/CheckboxSelectMultiple.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/HiddenInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/ClearableFileInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/Media.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/DateInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/MediaDefiningClass.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/DateTimeInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/MultiWidget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/EmailInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/MultipleHiddenInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/FileInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/NullBooleanSelect.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/HiddenInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/NumberInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/Media.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/PasswordInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/MediaDefiningClass.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/RadioSelect.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/MultiWidget.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/Select.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/MultipleHiddenInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/SelectDateWidget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/NullBooleanSelect.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/SelectMultiple.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/NumberInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/SplitDateTimeWidget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/PasswordInput.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/SplitHiddenDateTimeWidget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/RadioSelect.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/TextInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/Select.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/Textarea.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/SelectDateWidget.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/TimeInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/SelectMultiple.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/URLInput.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/SplitDateTimeWidget.html</loc>
                     
                         <priority>0.9</priority>
                     
                 </url>
             
                 <url>
-                    <loc>http://someurl.com/1.11/django.forms.widgets/Widget.html</loc>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/SplitHiddenDateTimeWidget.html</loc>
+                    
+                        <priority>0.9</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/TextInput.html</loc>
+                    
+                        <priority>0.9</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/Textarea.html</loc>
+                    
+                        <priority>0.9</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/TimeInput.html</loc>
+                    
+                        <priority>0.9</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/URLInput.html</loc>
+                    
+                        <priority>0.9</priority>
+                    
+                </url>
+            
+                <url>
+                    <loc>https://ana-balica.github.io/classy-django-forms//1.11/django.forms.widgets/Widget.html</loc>
                     
                         <priority>0.9</priority>
                     
