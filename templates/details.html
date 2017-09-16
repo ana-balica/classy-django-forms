@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ name }}{% endblock %}
-
-{% block metatags %}
-    <meta name="description" content="Detailed descriptions, with full methods and attributes of {{ name }} Django class.">
-{% endblock %}
+{% block title %}{{ this_klass_name }}{% endblock %}
 
 {% block extra_js %}
     <script>
