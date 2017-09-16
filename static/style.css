@@ -138,6 +138,12 @@ footer p {
     padding-top: 60px;
 }
 
+@media (max-width: 979px) {
+    #main {
+        padding-top: 0px;
+    }
+}
+
 .nav .nav-header{
     padding: 0 15px;
 }
