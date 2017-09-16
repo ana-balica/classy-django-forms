@@ -35,6 +35,7 @@ def get_klasses():
                 klass = getattr(module, klass_name)
                 if inspect.isclass(klass):
                     klasses[module].append(klass)
+            klasses[module].sort(key=lambda x: x.__name__)
     return klasses
 
 
