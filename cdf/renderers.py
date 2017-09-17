@@ -25,7 +25,8 @@ class BasicPageRenderer:
             'version': VERSION,
             'versions': DJANGO_VERSIONS,
             'other_versions': other_versions,
-            'klasses': self.klasses
+            'klasses': self.klasses,
+            'base_url': BASE_URL,
         }
 
 
