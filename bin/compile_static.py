@@ -27,7 +27,8 @@ def main():
     index_version_path = os.path.join(out_folder, VERSION, 'index.html')
     renderer.render('index.html', index_version_path)
 
-    if VERSION == DJANGO_VERSIONS[-1]:
+    # Render one version of homepage, 404 and sitemap pages
+    if VERSION == DJANGO_VERSIONS[0]:
         index_path = os.path.join(out_folder, 'index.html')
         renderer.render('home.html', index_path)
         not_found_path = os.path.join(out_folder, '404.html')
