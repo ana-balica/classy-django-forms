@@ -25,6 +25,12 @@ These 2 scripts are called for each tox environment. Tox is used to create multi
 
 **Tip:** during development if you don't want to build the static files for all versions of Django, you can run `tox -e dj19` to generate the index and `tox -e djbuild19` to compile static files only for Django 1.9.
 
+## How to add a new Django version
+
+1. Update `cdf/config.py` and `tox.ini` like [this](https://github.com/ana-balica/classy-django-forms/commit/45ef9b8cbdc52a5608f16f527c6f93bb716942db).
+2. Activate virtualenv and run `make build_local`.
+3. You should see a new folder in `public/` and a new key in `.klasses.json` with the added Django version.
+
 ## How to deploy
 
 The website is hosted by GitHub Pages on a custom domain [https://cdf.9vo.lt](https://cdf.9vo.lt).
