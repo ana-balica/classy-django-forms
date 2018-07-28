@@ -13,4 +13,4 @@ DJANGO_VERSIONS = [
 
 
 VERSION = get_major_dot_minor_version(django_version)
-BASE_URL = 'http://cdf.9vo.lt/'
+BASE_URL = 'https://cdf.9vo.lt/'
