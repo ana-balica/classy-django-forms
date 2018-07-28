@@ -19,7 +19,6 @@ def stringify_klasses_data(klasses_by_module):
     return klasses_data
 
 
-
 def main():
     klasses_by_module = get_klasses()
 
