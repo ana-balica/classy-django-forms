@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BoundField -- Classy Django Forms</title>
+    <meta name="description" content="Detailed descriptions, with full methods, properties and attributes of BoundField Django forms class.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://cdf.9vo.lt/static/favicon.ico"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles from Twitter Bootstrap-->
+    <link href="http://cdf.9vo.lt/static/bootstrap.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/style.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/manni.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://cdf.9vo.lt/static/jquery-1.7.1.min.js"><\/script>');</script>
+    <script src="http://cdf.9vo.lt/static/bootstrap-collapse.js"></script>
+    <script src="http://cdf.9vo.lt/static/modernizr-2.5.3.min.js"></script>
+    <script src="http://cdf.9vo.lt/static/bootstrap-dropdowns.js"></script>
+    <script>$('.dropdown-toggle').dropdown()</script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106634847-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106634847-1');
+    </script>
+
+    
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">cdf</a>
+                <ul class="nav">
+
+                
+
+                <li li="version-1.10" class="dropdown">
+                    
+                        <a href="#version-1.10" class="dropdown-toggle" data-toggle="dropdown">
+                            Django 1.10 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/2.0/django.forms.boundfield/BoundField.html">2.0</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.11/django.forms.boundfield/BoundField.html">1.11</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.9/django.forms.boundfield/BoundField.html">1.9</a>
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+
+                <li class="divider-vertical"></li>
+                
+                    
+                        
+                        
+                        <li id="module-boundfield" class="dropdown">
+                            <a href="#module-boundfield" class="dropdown-toggle" data-toggle="dropdown">
+                                Boundfield <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li class=" active">
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.boundfield/BoundField.html">BoundField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-fields" class="dropdown">
+                            <a href="#module-fields" class="dropdown-toggle" data-toggle="dropdown">
+                                Fields <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/BooleanField.html">BooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/CharField.html">CharField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/ChoiceField.html">ChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/ComboField.html">ComboField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/DateField.html">DateField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/DateTimeField.html">DateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/DecimalField.html">DecimalField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/DurationField.html">DurationField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/EmailField.html">EmailField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/Field.html">Field</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/FileField.html">FileField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/FilePathField.html">FilePathField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/FloatField.html">FloatField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/GenericIPAddressField.html">GenericIPAddressField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/ImageField.html">ImageField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/IntegerField.html">IntegerField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/MultiValueField.html">MultiValueField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/MultipleChoiceField.html">MultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/NullBooleanField.html">NullBooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/RegexField.html">RegexField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/SlugField.html">SlugField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/SplitDateTimeField.html">SplitDateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/TimeField.html">TimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/TypedChoiceField.html">TypedChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/TypedMultipleChoiceField.html">TypedMultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/URLField.html">URLField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.fields/UUIDField.html">UUIDField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-forms" class="dropdown">
+                            <a href="#module-forms" class="dropdown-toggle" data-toggle="dropdown">
+                                Forms <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.forms/BaseForm.html">BaseForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.forms/Form.html">Form</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-formsets" class="dropdown">
+                            <a href="#module-formsets" class="dropdown-toggle" data-toggle="dropdown">
+                                Formsets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.formsets/BaseFormSet.html">BaseFormSet</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-models" class="dropdown">
+                            <a href="#module-models" class="dropdown-toggle" data-toggle="dropdown">
+                                Models <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.models/BaseInlineFormSet.html">BaseInlineFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.models/BaseModelForm.html">BaseModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.models/BaseModelFormSet.html">BaseModelFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.models/ModelChoiceField.html">ModelChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.models/ModelForm.html">ModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.models/ModelMultipleChoiceField.html">ModelMultipleChoiceField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-widgets" class="dropdown">
+                            <a href="#module-widgets" class="dropdown-toggle" data-toggle="dropdown">
+                                Widgets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/CheckboxInput.html">CheckboxInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/CheckboxSelectMultiple.html">CheckboxSelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/ClearableFileInput.html">ClearableFileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/DateInput.html">DateInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/DateTimeInput.html">DateTimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/EmailInput.html">EmailInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/FileInput.html">FileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/HiddenInput.html">HiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/Media.html">Media</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/MediaDefiningClass.html">MediaDefiningClass</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/MultiWidget.html">MultiWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/MultipleHiddenInput.html">MultipleHiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/NullBooleanSelect.html">NullBooleanSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/NumberInput.html">NumberInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/PasswordInput.html">PasswordInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/RadioSelect.html">RadioSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/Select.html">Select</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/SelectDateWidget.html">SelectDateWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/SelectMultiple.html">SelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/SplitDateTimeWidget.html">SplitDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/SplitHiddenDateTimeWidget.html">SplitHiddenDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/TextInput.html">TextInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/Textarea.html">Textarea</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/TimeInput.html">TimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/URLInput.html">URLInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.10/django.forms.widgets/Widget.html">Widget</a>
+                        </li>
+                    
+                    
+                
+                </ul></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <article id="main">
+            
+    <h1><small>class</small>&nbsp;BoundField</h1>
+    <pre>from django.forms import BoundField</pre>
+    <div class="pull-right">
+        
+            <a class="btn btn-small btn-info" href="https://docs.djangoproject.com/en/1.10/ref/forms/boundfield/#boundfield" target="_blank">Documentation</a>
+        
+        <a class="btn btn-small btn-info" href="https://github.com/django/django/blob/stable/1.10.x/django/forms/boundfield.py#L23" target="_blank">Source code</a>
+    </div>
+    
+        <pre class="docstring">A Field plus data</pre>
+    
+
+            <div class="row">
+    <div class="span12">
+
+        <!-- ANCESTORS -->
+        <div class="row">
+            
+                
+                    <div class="span4">
+                    <h2>Ancestors (<abbr title="Method Resolution Order">MRO</abbr>)</h2>
+                    <ol start='0' id="ancestors">
+                        <li><strong>BoundField</strong></li>
+                
+                </ol></div>
+            
+        </div>
+
+        <!-- DESCENDANTS -->
+        <div class="row">
+            
+        </div>
+
+        <!-- ATTRIBUTES -->
+        <div class="row">
+            
+        </div>
+
+        <!-- PROPERTIES -->
+        <div class="row">
+            
+                
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                <h2>Properties</h2>
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#auto_id">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">auto_id</span>():
+                                </code>
+                                 <a class="headerlink" href="#auto_id" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="auto_id" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#auto_id-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="auto_id-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">auto_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Calculates and returns the ID attribute for this BoundField, if the</span>
+<span class="sd">        associated Form has specified auto_id. Returns an empty string otherwise.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">auto_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">auto_id</span>
+        <span class="k">if</span> <span class="n">auto_id</span> <span class="ow">and</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="ow">in</span> <span class="n">smart_text</span><span class="p">(</span><span class="n">auto_id</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">smart_text</span><span class="p">(</span><span class="n">auto_id</span><span class="p">)</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">html_name</span>
+        <span class="k">elif</span> <span class="n">auto_id</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">html_name</span>
+        <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#data">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">data</span>():
+                                </code>
+                                 <a class="headerlink" href="#data" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="data" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#data-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="data-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the data for this BoundField, or None if it wasn&#39;t given.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">value_from_datadict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">files</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">html_name</span><span class="p">)</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#errors">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">errors</span>():
+                                </code>
+                                 <a class="headerlink" href="#errors" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="errors" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#errors-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="errors-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">errors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns an ErrorList for this field. Returns an empty ErrorList</span>
+<span class="sd">        if there are none.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">error_class</span><span class="p">())</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#id_for_label">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">id_for_label</span>():
+                                </code>
+                                 <a class="headerlink" href="#id_for_label" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="id_for_label" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#id_for_label-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="id_for_label-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">id_for_label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Wrapper around the field widget&#39;s `id_for_label` method.</span>
+<span class="sd">        Useful, for example, for focusing on this field regardless of whether</span>
+<span class="sd">        it has a single widget or a MultiWidget.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">widget</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span>
+        <span class="n">id_</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_id</span>
+        <span class="k">return</span> <span class="n">widget</span><span class="o">.</span><span class="n">id_for_label</span><span class="p">(</span><span class="n">id_</span><span class="p">)</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#initial">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">initial</span>():
+                                </code>
+                                 <a class="headerlink" href="#initial" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="initial" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#initial-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="initial-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">initial</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">initial</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">initial</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">callable</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_initial_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">UNSET</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_initial_value</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">()</span>
+                <span class="c1"># If this is an auto-generated default date, nix the</span>
+                <span class="c1"># microseconds for standardized handling. See #22502.</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">time</span><span class="p">))</span> <span class="ow">and</span>
+                        <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">supports_microseconds</span><span class="p">):</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">microsecond</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_initial_value</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">return</span> <span class="n">data</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#is_hidden">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">is_hidden</span>():
+                                </code>
+                                 <a class="headerlink" href="#is_hidden" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="is_hidden" class="accordion-body collapse in">
+                            
+                                
+                                <div class="namesake accordion-group">
+                                    <header class="accordion-heading" data-toggle="collapse" data-target="#is_hidden-getter">
+                                        <h4 class="accordion-toggle">Getter</h4>
+                                    </header>
+                                    <div id="is_hidden-getter" class="accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            
+                                            <div class="highlight"><pre><span></span>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">is_hidden</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="s2">&quot;Returns True if this BoundField&#39;s widget is hidden.&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">is_hidden</span>
+</pre></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+        </div>
+
+        <!-- METHODS -->
+        <div class="row">
+            
+                
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                    <h2>Methods</h2>
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#as_hidden">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">as_hidden</span>(<span class="n">self, attrs=None, **kwargs</span>):
+                                </code>
+                                 <a class="headerlink" href="#as_hidden" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="as_hidden" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns a string of HTML for representing this as an &lt;input type=&#34;hidden&#34;&gt;.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">as_hidden</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a string of HTML for representing this as an &lt;input type=&quot;hidden&quot;&gt;.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">as_widget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">hidden_widget</span><span class="p">(),</span> <span class="n">attrs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#as_text">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">as_text</span>(<span class="n">self, attrs=None, **kwargs</span>):
+                                </code>
+                                 <a class="headerlink" href="#as_text" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="as_text" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns a string of HTML for representing this as an &lt;input type=&#34;text&#34;&gt;.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">as_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a string of HTML for representing this as an &lt;input type=&quot;text&quot;&gt;.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">as_widget</span><span class="p">(</span><span class="n">TextInput</span><span class="p">(),</span> <span class="n">attrs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#as_textarea">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">as_textarea</span>(<span class="n">self, attrs=None, **kwargs</span>):
+                                </code>
+                                 <a class="headerlink" href="#as_textarea" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="as_textarea" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">Returns a string of HTML for representing this as a &lt;textarea&gt;.</pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">as_textarea</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="s2">&quot;Returns a string of HTML for representing this as a &lt;textarea&gt;.&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">as_widget</span><span class="p">(</span><span class="n">Textarea</span><span class="p">(),</span> <span class="n">attrs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#as_widget">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">as_widget</span>(<span class="n">self, widget=None, attrs=None, only_initial=False</span>):
+                                </code>
+                                 <a class="headerlink" href="#as_widget" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="as_widget" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Renders the field by rendering the passed widget, adding any HTML
+        attributes passed as attrs.  If no widget is specified, then the
+        field&#39;s default widget will be used.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">as_widget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">only_initial</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Renders the field by rendering the passed widget, adding any HTML</span>
+<span class="sd">        attributes passed as attrs.  If no widget is specified, then the</span>
+<span class="sd">        field&#39;s default widget will be used.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">widget</span><span class="p">:</span>
+            <span class="n">widget</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">localize</span><span class="p">:</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">is_localized</span> <span class="o">=</span> <span class="bp">True</span>
+
+        <span class="n">attrs</span> <span class="o">=</span> <span class="n">attrs</span> <span class="ow">or</span> <span class="p">{}</span>
+        <span class="n">attrs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_widget_attrs</span><span class="p">(</span><span class="n">attrs</span><span class="p">,</span> <span class="n">widget</span><span class="p">)</span>
+        <span class="n">auto_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_id</span>
+        <span class="k">if</span> <span class="n">auto_id</span> <span class="ow">and</span> <span class="s1">&#39;id&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">attrs</span> <span class="ow">and</span> <span class="s1">&#39;id&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">widget</span><span class="o">.</span><span class="n">attrs</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">only_initial</span><span class="p">:</span>
+                <span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">auto_id</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">html_initial_id</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">only_initial</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">html_name</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">html_initial_name</span>
+        <span class="k">return</span> <span class="n">force_text</span><span class="p">(</span><span class="n">widget</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">(),</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">))</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#build_widget_attrs">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">build_widget_attrs</span>(<span class="n">self, attrs, widget=None</span>):
+                                </code>
+                                 <a class="headerlink" href="#build_widget_attrs" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="build_widget_attrs" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">build_widget_attrs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attrs</span><span class="p">,</span> <span class="n">widget</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">widget</span><span class="p">:</span>
+            <span class="n">widget</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span>
+        <span class="n">attrs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">attrs</span><span class="p">)</span>  <span class="c1"># Copy attrs to avoid modifying the argument.</span>
+        <span class="k">if</span> <span class="n">widget</span><span class="o">.</span><span class="n">use_required_attribute</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">initial</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">required</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">use_required_attribute</span><span class="p">:</span>
+            <span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;required&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">disabled</span><span class="p">:</span>
+            <span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;disabled&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">return</span> <span class="n">attrs</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#css_classes">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">css_classes</span>(<span class="n">self, extra_classes=None</span>):
+                                </code>
+                                 <a class="headerlink" href="#css_classes" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="css_classes" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns a string of space-separated CSS classes for this field.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">css_classes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">extra_classes</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns a string of space-separated CSS classes for this field.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">extra_classes</span><span class="p">,</span> <span class="s1">&#39;split&#39;</span><span class="p">):</span>
+            <span class="n">extra_classes</span> <span class="o">=</span> <span class="n">extra_classes</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+        <span class="n">extra_classes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">extra_classes</span> <span class="ow">or</span> <span class="p">[])</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">errors</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="p">,</span> <span class="s1">&#39;error_css_class&#39;</span><span class="p">):</span>
+            <span class="n">extra_classes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">error_css_class</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">required</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="p">,</span> <span class="s1">&#39;required_css_class&#39;</span><span class="p">):</span>
+            <span class="n">extra_classes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">required_css_class</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">extra_classes</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#label_tag">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">label_tag</span>(<span class="n">self, contents=None, attrs=None, label_suffix=None</span>):
+                                </code>
+                                 <a class="headerlink" href="#label_tag" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="label_tag" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Wraps the given contents in a &lt;label&gt;, if the field has an ID attribute.
+        contents should be &#39;mark_safe&#39;d to avoid HTML escaping. If contents
+        aren&#39;t given, uses the field&#39;s HTML-escaped label.
+
+        If attrs are given, they&#39;re used as HTML attributes on the &lt;label&gt; tag.
+
+        label_suffix allows overriding the form&#39;s label_suffix.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">label_tag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">contents</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">label_suffix</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Wraps the given contents in a &lt;label&gt;, if the field has an ID attribute.</span>
+<span class="sd">        contents should be &#39;mark_safe&#39;d to avoid HTML escaping. If contents</span>
+<span class="sd">        aren&#39;t given, uses the field&#39;s HTML-escaped label.</span>
+
+<span class="sd">        If attrs are given, they&#39;re used as HTML attributes on the &lt;label&gt; tag.</span>
+
+<span class="sd">        label_suffix allows overriding the form&#39;s label_suffix.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">contents</span> <span class="o">=</span> <span class="n">contents</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">label</span>
+        <span class="k">if</span> <span class="n">label_suffix</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">label_suffix</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">label_suffix</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">label_suffix</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span>
+                            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">label_suffix</span><span class="p">)</span>
+        <span class="c1"># Only add the suffix if the label does not end in punctuation.</span>
+        <span class="c1"># Translators: If found as last label character, these punctuation</span>
+        <span class="c1"># characters will prevent the default label_suffix to be appended to the label</span>
+        <span class="k">if</span> <span class="n">label_suffix</span> <span class="ow">and</span> <span class="n">contents</span> <span class="ow">and</span> <span class="n">contents</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">_</span><span class="p">(</span><span class="s1">&#39;:?.!&#39;</span><span class="p">):</span>
+            <span class="n">contents</span> <span class="o">=</span> <span class="n">format_html</span><span class="p">(</span><span class="s1">&#39;{}{}&#39;</span><span class="p">,</span> <span class="n">contents</span><span class="p">,</span> <span class="n">label_suffix</span><span class="p">)</span>
+        <span class="n">widget</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">widget</span>
+        <span class="n">id_</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_id</span>
+        <span class="k">if</span> <span class="n">id_</span><span class="p">:</span>
+            <span class="n">id_for_label</span> <span class="o">=</span> <span class="n">widget</span><span class="o">.</span><span class="n">id_for_label</span><span class="p">(</span><span class="n">id_</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">id_for_label</span><span class="p">:</span>
+                <span class="n">attrs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">attrs</span> <span class="ow">or</span> <span class="p">{},</span> <span class="o">**</span><span class="p">{</span><span class="s1">&#39;for&#39;</span><span class="p">:</span> <span class="n">id_for_label</span><span class="p">})</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">required</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="p">,</span> <span class="s1">&#39;required_css_class&#39;</span><span class="p">):</span>
+                <span class="n">attrs</span> <span class="o">=</span> <span class="n">attrs</span> <span class="ow">or</span> <span class="p">{}</span>
+                <span class="k">if</span> <span class="s1">&#39;class&#39;</span> <span class="ow">in</span> <span class="n">attrs</span><span class="p">:</span>
+                    <span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">required_css_class</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">required_css_class</span>
+            <span class="n">attrs</span> <span class="o">=</span> <span class="n">flatatt</span><span class="p">(</span><span class="n">attrs</span><span class="p">)</span> <span class="k">if</span> <span class="n">attrs</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
+            <span class="n">contents</span> <span class="o">=</span> <span class="n">format_html</span><span class="p">(</span><span class="s1">&#39;&lt;label{}&gt;{}&lt;/label&gt;&#39;</span><span class="p">,</span> <span class="n">attrs</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">contents</span> <span class="o">=</span> <span class="n">conditional_escape</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">mark_safe</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#value">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">value</span>(<span class="n">self</span>):
+                                </code>
+                                 <a class="headerlink" href="#value" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">BoundField</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="value" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Returns the value for this BoundField, using the initial value if
+        the form is not bound or the data otherwise.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the value for this BoundField, using the initial value if</span>
+<span class="sd">        the form is not bound or the data otherwise.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">is_bound</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">initial</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">bound_data</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">form</span><span class="o">.</span><span class="n">initial</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">initial</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">field</span><span class="o">.</span><span class="n">prepare_value</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+        </div>
+
+    </div>
+</div>
+        </article>
+        
+            <footer>
+                <hr />
+                <p>Built by <a href="http://twitter.com/anabalica" target="_blank">@anabalica</a>.</p>
+
+                <p><a href="http://github.com/ana-balica/classy-django-forms/">Source code</a> on <a href="http://github.com/">GitHub</a>.</p>
+
+                <p>Based on <a href="http://ccbv.co.uk/">Django Classy Class-Based Views</a> and <a href="http://www.cdrf.co/">Classy Django Rest Framework</a>.</p>
+            </footer>
+        
+    </div> <!-- /container -->
+    <script type="text/javascript">$('.dropdown-toggle').dropdown()</script>
+    
+    <script>
+        // Activate accordion
+        $(function () {
+            $(".collapse").collapse();
+            // Method collapsing/expanding buttons
+            $("#collapse-methods-btn").click(function() {
+                CCBV.method_list.collapse();
+            });
+            $("#expand-methods-btn").click(function() {
+                CCBV.method_list.expand();
+            });
+
+            function goToAnchor() {
+              var anchor = window.location.hash.replace("#", "");
+              $(".collapse").collapse('hide');
+              if (anchor) {
+                $("#" + anchor).collapse('show');
+                $('#' + anchor + ' .collapse').collapse('show');
+                setTimeout(function(){
+                  console.log($('#' + anchor).attr('class'));
+                  $('html, body').animate({
+                    scrollTop: $('#' + anchor).offset().top - 70
+                  }, 0);
+                }, 500);
+              }
+            }
+
+            $(document).ready(function() {
+              goToAnchor();
+
+              window.addEventListener("hashchange", function() { goToAnchor(); });
+
+            });
+        });
+    </script>
+    <script src="/static/ccbv.js"></script>
+
+</body>
+</html>
