@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FileField -- Classy Django Forms</title>
+    <meta name="description" content="Detailed descriptions, with full methods, properties and attributes of FileField Django forms class.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://cdf.9vo.lt/static/favicon.ico"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles from Twitter Bootstrap-->
+    <link href="http://cdf.9vo.lt/static/bootstrap.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/style.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/manni.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://cdf.9vo.lt/static/jquery-1.7.1.min.js"><\/script>');</script>
+    <script src="http://cdf.9vo.lt/static/bootstrap-collapse.js"></script>
+    <script src="http://cdf.9vo.lt/static/modernizr-2.5.3.min.js"></script>
+    <script src="http://cdf.9vo.lt/static/bootstrap-dropdowns.js"></script>
+    <script>$('.dropdown-toggle').dropdown()</script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106634847-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106634847-1');
+    </script>
+
+    
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">cdf</a>
+                <ul class="nav">
+
+                
+
+                <li li="version-1.9" class="dropdown">
+                    
+                        <a href="#version-1.9" class="dropdown-toggle" data-toggle="dropdown">
+                            Django 1.9 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/2.0/django.forms.fields/FileField.html">2.0</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.11/django.forms.fields/FileField.html">1.11</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.10/django.forms.fields/FileField.html">1.10</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.8/django.forms.fields/FileField.html">1.8</a>
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+
+                <li class="divider-vertical"></li>
+                
+                    
+                        
+                        
+                        <li id="module-boundfield" class="dropdown">
+                            <a href="#module-boundfield" class="dropdown-toggle" data-toggle="dropdown">
+                                Boundfield <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.boundfield/BoundField.html">BoundField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-fields" class="dropdown">
+                            <a href="#module-fields" class="dropdown-toggle" data-toggle="dropdown">
+                                Fields <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/BooleanField.html">BooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/CharField.html">CharField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/ChoiceField.html">ChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/ComboField.html">ComboField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/DateField.html">DateField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/DateTimeField.html">DateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/DecimalField.html">DecimalField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/DurationField.html">DurationField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/EmailField.html">EmailField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/Field.html">Field</a>
+                        </li>
+                    
+                        <li class=" active">
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/FileField.html">FileField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/FilePathField.html">FilePathField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/FloatField.html">FloatField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/GenericIPAddressField.html">GenericIPAddressField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/ImageField.html">ImageField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/IntegerField.html">IntegerField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/MultiValueField.html">MultiValueField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/MultipleChoiceField.html">MultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/NullBooleanField.html">NullBooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/RegexField.html">RegexField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/SlugField.html">SlugField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/SplitDateTimeField.html">SplitDateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/TimeField.html">TimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/TypedChoiceField.html">TypedChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/TypedMultipleChoiceField.html">TypedMultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/URLField.html">URLField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/UUIDField.html">UUIDField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-forms" class="dropdown">
+                            <a href="#module-forms" class="dropdown-toggle" data-toggle="dropdown">
+                                Forms <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.forms/BaseForm.html">BaseForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.forms/Form.html">Form</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-formsets" class="dropdown">
+                            <a href="#module-formsets" class="dropdown-toggle" data-toggle="dropdown">
+                                Formsets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.formsets/BaseFormSet.html">BaseFormSet</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-models" class="dropdown">
+                            <a href="#module-models" class="dropdown-toggle" data-toggle="dropdown">
+                                Models <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.models/BaseInlineFormSet.html">BaseInlineFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.models/BaseModelForm.html">BaseModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.models/BaseModelFormSet.html">BaseModelFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.models/ModelChoiceField.html">ModelChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.models/ModelForm.html">ModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.models/ModelMultipleChoiceField.html">ModelMultipleChoiceField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-widgets" class="dropdown">
+                            <a href="#module-widgets" class="dropdown-toggle" data-toggle="dropdown">
+                                Widgets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/CheckboxInput.html">CheckboxInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/CheckboxSelectMultiple.html">CheckboxSelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/ClearableFileInput.html">ClearableFileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/DateInput.html">DateInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/DateTimeInput.html">DateTimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/EmailInput.html">EmailInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/FileInput.html">FileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/HiddenInput.html">HiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/Media.html">Media</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/MediaDefiningClass.html">MediaDefiningClass</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/MultiWidget.html">MultiWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/MultipleHiddenInput.html">MultipleHiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/NullBooleanSelect.html">NullBooleanSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/NumberInput.html">NumberInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/PasswordInput.html">PasswordInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/RadioSelect.html">RadioSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/Select.html">Select</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/SelectDateWidget.html">SelectDateWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/SelectMultiple.html">SelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/SplitDateTimeWidget.html">SplitDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/SplitHiddenDateTimeWidget.html">SplitHiddenDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/TextInput.html">TextInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/Textarea.html">Textarea</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/TimeInput.html">TimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/URLInput.html">URLInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.widgets/Widget.html">Widget</a>
+                        </li>
+                    
+                    
+                
+                </ul></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <article id="main">
+            
+    <h1><small>class</small>&nbsp;FileField</h1>
+    <pre>from django.forms import FileField</pre>
+    <div class="pull-right">
+        
+            <a class="btn btn-small btn-info" href="https://docs.djangoproject.com/en/1.9/ref/forms/fields/#filefield" target="_blank">Documentation</a>
+        
+        <a class="btn btn-small btn-info" href="https://github.com/django/django/blob/stable/1.9.x/django/forms/fields.py#L554" target="_blank">Source code</a>
+    </div>
+    
+
+            <div class="row">
+    <div class="span12">
+
+        <!-- ANCESTORS -->
+        <div class="row">
+            
+                
+                    <div class="span4">
+                    <h2>Ancestors (<abbr title="Method Resolution Order">MRO</abbr>)</h2>
+                    <ol start='0' id="ancestors">
+                        <li><strong>FileField</strong></li>
+                
+                
+            
+                
+                        <li>
+                            <a href="http://cdf.9vo.lt/1.9/django.forms.fields/Field.html" class="direct">
+                                Field
+                            </a>
+                        </li>
+                
+                </ol></div>
+            
+        </div>
+
+        <!-- DESCENDANTS -->
+        <div class="row">
+            
+                
+                    <div class="span4" id="descendants">
+                    <h2>Descendants</h2>
+                    <ul class="unstyled">
+                    
+                        <li><a href="http://cdf.9vo.lt/1.9/django.forms.fields/ImageField.html">ImageField</a></li>
+                    </ul></div>
+            
+        </div>
+
+        <!-- ATTRIBUTES -->
+        <div class="row">
+            
+                
+                    <div class="span12">
+                        <h2>Attributes</h2>
+                        <table class="table table-striped table-bordered table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Defined in</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>creation_counter</strong> = 0
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="http://cdf.9vo.lt/1.9/django.forms.fields/Field.html">Field</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>default_error_messages</strong> = {&#39;invalid&#39;: &lt;django.utils.functional.lazy.&lt;locals&gt;.__proxy__ object at 0x108288630&gt;, &#39;missing&#39;: &lt;django.utils.functional.lazy.&lt;locals&gt;.__proxy__ object at 0x1082886a0&gt;, &#39;empty&#39;: &lt;django.utils.functional.lazy.&lt;locals&gt;.__proxy__ object at 0x108288710&gt;, &#39;max_length&#39;: &lt;django.utils.functional.lazy.&lt;locals&gt;.__proxy__ object at 0x108288a58&gt;, &#39;contradiction&#39;: &lt;django.utils.functional.lazy.&lt;locals&gt;.__proxy__ object at 0x108288ac8&gt;}
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        FileField
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute overridden">
+                                        <strong>default_error_messages</strong> = {&#39;required&#39;: &lt;django.utils.functional.lazy.&lt;locals&gt;.__proxy__ object at 0x10824fd30&gt;}
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="http://cdf.9vo.lt/1.9/django.forms.fields/Field.html">Field</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>default_validators</strong> = []
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="http://cdf.9vo.lt/1.9/django.forms.fields/Field.html">Field</a>
+                                    
+                                </td>
+                            </tr>
+                
+            
+                
+                            <tr>
+                                <td>
+                                    <code class="attribute">
+                                        <strong>empty_values</strong> = [None, &#39;&#39;, [], (), {}]
+                                    </code>
+                                </td>
+                                <td style="min-width:100px">
+                                    
+                                        <a href="http://cdf.9vo.lt/1.9/django.forms.fields/Field.html">Field</a>
+                                    
+                                </td>
+                            </tr>
+                
+                            </tbody>
+                        </table>
+                    </div>
+                
+            
+        </div>
+
+        <!-- PROPERTIES -->
+        <div class="row">
+            
+        </div>
+
+        <!-- METHODS -->
+        <div class="row">
+            
+                
+                <div id="method-list" class="span12 accordion">
+                    <div id='method-buttons'>
+                        <span class="btn btn-small" id="expand-methods-btn">Expand</span>
+                        <span class="btn btn-small" id="collapse-methods-btn">Collapse</span>
+                    </div>
+                    <h2>Methods</h2>
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#_has_changed">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">_has_changed</span>(<span class="n">*args, **kwargs</span>):
+                                </code>
+                                 <a class="headerlink" href="#_has_changed" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="_has_changed" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#_has_changed-FileField">
+                                            <h4 class="accordion-toggle">FileField</h4>
+                                        </header>
+                                        <div id="_has_changed-FileField" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>        <span class="k">def</span> <span class="nf">wrapped</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+                <span class="s2">&quot;`</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">` is deprecated, use `</span><span class="si">%s</span><span class="s2">` instead.&quot;</span> <span class="o">%</span>
+                <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">class_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">old_method_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">new_method_name</span><span class="p">),</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">deprecation_warning</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#_has_changed-Field">
+                                            <h4 class="accordion-toggle">Field</h4>
+                                        </header>
+                                        <div id="_has_changed-Field" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>        <span class="k">def</span> <span class="nf">wrapped</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+                <span class="s2">&quot;`</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">` is deprecated, use `</span><span class="si">%s</span><span class="s2">` instead.&quot;</span> <span class="o">%</span>
+                <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">class_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">old_method_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">new_method_name</span><span class="p">),</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">deprecation_warning</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#bound_data">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">bound_data</span>(<span class="n">self, data, initial</span>):
+                                </code>
+                                 <a class="headerlink" href="#bound_data" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="bound_data" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#bound_data-FileField">
+                                            <h4 class="accordion-toggle">FileField</h4>
+                                        </header>
+                                        <div id="bound_data-FileField" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">bound_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">initial</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">in</span> <span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">FILE_INPUT_CONTRADICTION</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">initial</span>
+        <span class="k">return</span> <span class="n">data</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#bound_data-Field">
+                                            <h4 class="accordion-toggle">Field</h4>
+                                        </header>
+                                        <div id="bound_data-Field" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                <pre class="docstring">
+        Return the value that should be shown for this field on render of a
+        bound form, given the submitted POST data for the field and the initial
+        data, if any.
+
+        For most fields, this will simply be data; FileFields need to handle it
+        a bit differently.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">bound_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">initial</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return the value that should be shown for this field on render of a</span>
+<span class="sd">        bound form, given the submitted POST data for the field and the initial</span>
+<span class="sd">        data, if any.</span>
+
+<span class="sd">        For most fields, this will simply be data; FileFields need to handle it</span>
+<span class="sd">        a bit differently.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">disabled</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">initial</span>
+        <span class="k">return</span> <span class="n">data</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#clean">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">clean</span>(<span class="n">self, data, initial=None</span>):
+                                </code>
+                                 <a class="headerlink" href="#clean" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="clean" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#clean-FileField">
+                                            <h4 class="accordion-toggle">FileField</h4>
+                                        </header>
+                                        <div id="clean-FileField" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">clean</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">initial</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+        <span class="c1"># If the widget got contradictory inputs, we raise a validation error</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">FILE_INPUT_CONTRADICTION</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="s1">&#39;contradiction&#39;</span><span class="p">],</span> <span class="n">code</span><span class="o">=</span><span class="s1">&#39;contradiction&#39;</span><span class="p">)</span>
+        <span class="c1"># False means the field value should be cleared; further validation is</span>
+        <span class="c1"># not needed.</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="bp">False</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">required</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">False</span>
+            <span class="c1"># If the field is required, clearing is not possible (the widget</span>
+            <span class="c1"># shouldn&#39;t return False data in that case anyway). False is not</span>
+            <span class="c1"># in self.empty_value; if a False value makes it this far</span>
+            <span class="c1"># it should be validated from here on out as None (so it will be</span>
+            <span class="c1"># caught by the required check).</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span> <span class="ow">and</span> <span class="n">initial</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">initial</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">FileField</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">clean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#clean-Field">
+                                            <h4 class="accordion-toggle">Field</h4>
+                                        </header>
+                                        <div id="clean-Field" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                <pre class="docstring">
+        Validates the given value and returns its &#34;cleaned&#34; value as an
+        appropriate Python object.
+
+        Raises ValidationError for any errors.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">clean</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Validates the given value and returns its &quot;cleaned&quot; value as an</span>
+<span class="sd">        appropriate Python object.</span>
+
+<span class="sd">        Raises ValidationError for any errors.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_python</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">run_validators</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">value</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#get_bound_field">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">get_bound_field</span>(<span class="n">self, form, field_name</span>):
+                                </code>
+                                 <a class="headerlink" href="#get_bound_field" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Field</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="get_bound_field" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Return a BoundField instance that will be used when accessing the form
+        field in a template.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">get_bound_field</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">form</span><span class="p">,</span> <span class="n">field_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a BoundField instance that will be used when accessing the form</span>
+<span class="sd">        field in a template.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">BoundField</span><span class="p">(</span><span class="n">form</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">field_name</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#has_changed">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">has_changed</span>(<span class="n">self, initial, data</span>):
+                                </code>
+                                 <a class="headerlink" href="#has_changed" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="has_changed" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#has_changed-FileField">
+                                            <h4 class="accordion-toggle">FileField</h4>
+                                        </header>
+                                        <div id="has_changed-FileField" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">has_changed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">initial</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">False</span>
+        <span class="k">return</span> <span class="bp">True</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#has_changed-Field">
+                                            <h4 class="accordion-toggle">Field</h4>
+                                        </header>
+                                        <div id="has_changed-Field" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                <pre class="docstring">
+        Return True if data differs from initial.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">has_changed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">initial</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return True if data differs from initial.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">to_python</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;_coerce&#39;</span><span class="p">):</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_coerce</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_coerce</span><span class="p">(</span><span class="n">initial</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">ValidationError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">True</span>
+        <span class="c1"># For purposes of seeing whether something has changed, None is</span>
+        <span class="c1"># the same as an empty string, if the data or initial value we get</span>
+        <span class="c1"># is None, replace it with &#39;&#39;.</span>
+        <span class="n">initial_value</span> <span class="o">=</span> <span class="n">initial</span> <span class="k">if</span> <span class="n">initial</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">data_value</span> <span class="o">=</span> <span class="n">data</span> <span class="k">if</span> <span class="n">data</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">return</span> <span class="n">initial_value</span> <span class="o">!=</span> <span class="n">data_value</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#prepare_value">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">prepare_value</span>(<span class="n">self, value</span>):
+                                </code>
+                                 <a class="headerlink" href="#prepare_value" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Field</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="prepare_value" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">prepare_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#run_validators">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">run_validators</span>(<span class="n">self, value</span>):
+                                </code>
+                                 <a class="headerlink" href="#run_validators" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Field</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="run_validators" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">run_validators</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_values</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">validators</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">v</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">except</span> <span class="n">ValidationError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">:</span>
+                    <span class="n">e</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="n">e</span><span class="o">.</span><span class="n">code</span><span class="p">]</span>
+                <span class="n">errors</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">error_list</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">errors</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#to_python">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">to_python</span>(<span class="n">self, data</span>):
+                                </code>
+                                 <a class="headerlink" href="#to_python" title="Permalink to this method">¶</a>
+                                
+                            </h3>
+                        </header>
+                        <div id="to_python" class="accordion-body collapse in">
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#to_python-FileField">
+                                            <h4 class="accordion-toggle">FileField</h4>
+                                        </header>
+                                        <div id="to_python-FileField" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">data</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_values</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">None</span>
+
+        <span class="c1"># UploadedFile objects should have name and size attributes.</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">file_name</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">name</span>
+            <span class="n">file_size</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">size</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="s1">&#39;invalid&#39;</span><span class="p">],</span> <span class="n">code</span><span class="o">=</span><span class="s1">&#39;invalid&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_length</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_length</span><span class="p">:</span>
+            <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;max&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_length</span><span class="p">,</span> <span class="s1">&#39;length&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">file_name</span><span class="p">)}</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="s1">&#39;max_length&#39;</span><span class="p">],</span> <span class="n">code</span><span class="o">=</span><span class="s1">&#39;max_length&#39;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">file_name</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="s1">&#39;invalid&#39;</span><span class="p">],</span> <span class="n">code</span><span class="o">=</span><span class="s1">&#39;invalid&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">allow_empty_file</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">file_size</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="s1">&#39;empty&#39;</span><span class="p">],</span> <span class="n">code</span><span class="o">=</span><span class="s1">&#39;empty&#39;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">data</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                                
+                                    <div class="namesake accordion-group">
+                                        <header class="accordion-heading" data-toggle="collapse" data-target="#to_python-Field">
+                                            <h4 class="accordion-toggle">Field</h4>
+                                        </header>
+                                        <div id="to_python-Field" class="accordion-body collapse in">
+                                            <div class="accordion-inner">
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span>
+</pre></div>
+
+                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#validate">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">validate</span>(<span class="n">self, value</span>):
+                                </code>
+                                 <a class="headerlink" href="#validate" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Field</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="validate" class="accordion-body collapse in">
+                            
+                                
+                                                
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">validate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">empty_values</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">required</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">error_messages</span><span class="p">[</span><span class="s1">&#39;required&#39;</span><span class="p">],</span> <span class="n">code</span><span class="o">=</span><span class="s1">&#39;required&#39;</span><span class="p">)</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                
+                
+            
+                
+                
+                    <div class="method accordion-group">
+                        <header class="accordion-heading btn" data-toggle="collapse" data-target="#widget_attrs">
+                            <h3>
+                                <code class="signature highlight">
+                                    <span class="k">def</span>
+                                    <span class="nf">widget_attrs</span>(<span class="n">self, widget</span>):
+                                </code>
+                                 <a class="headerlink" href="#widget_attrs" title="Permalink to this method">¶</a>
+                                
+                                    <small class="pull-right">Field</small>
+                                
+                            </h3>
+                        </header>
+                        <div id="widget_attrs" class="accordion-body collapse in">
+                            
+                                
+                                                <pre class="docstring">
+        Given a Widget instance (*not* a Widget class), returns a dictionary of
+        any HTML attributes that should be added to the Widget, based on this
+        Field.
+        </pre>
+                                                <div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">widget_attrs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Given a Widget instance (*not* a Widget class), returns a dictionary of</span>
+<span class="sd">        any HTML attributes that should be added to the Widget, based on this</span>
+<span class="sd">        Field.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">{}</span>
+</pre></div>
+
+                                
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                
+            
+        </div>
+
+    </div>
+</div>
+        </article>
+        
+            <footer>
+                <hr />
+                <p>Built by <a href="http://twitter.com/anabalica" target="_blank">@anabalica</a>.</p>
+
+                <p><a href="http://github.com/ana-balica/classy-django-forms/">Source code</a> on <a href="http://github.com/">GitHub</a>.</p>
+
+                <p>Based on <a href="http://ccbv.co.uk/">Django Classy Class-Based Views</a> and <a href="http://www.cdrf.co/">Classy Django Rest Framework</a>.</p>
+            </footer>
+        
+    </div> <!-- /container -->
+    <script type="text/javascript">$('.dropdown-toggle').dropdown()</script>
+    
+    <script>
+        // Activate accordion
+        $(function () {
+            $(".collapse").collapse();
+            // Method collapsing/expanding buttons
+            $("#collapse-methods-btn").click(function() {
+                CCBV.method_list.collapse();
+            });
+            $("#expand-methods-btn").click(function() {
+                CCBV.method_list.expand();
+            });
+
+            function goToAnchor() {
+              var anchor = window.location.hash.replace("#", "");
+              $(".collapse").collapse('hide');
+              if (anchor) {
+                $("#" + anchor).collapse('show');
+                $('#' + anchor + ' .collapse').collapse('show');
+                setTimeout(function(){
+                  console.log($('#' + anchor).attr('class'));
+                  $('html, body').animate({
+                    scrollTop: $('#' + anchor).offset().top - 70
+                  }, 0);
+                }, 500);
+              }
+            }
+
+            $(document).ready(function() {
+              goToAnchor();
+
+              window.addEventListener("hashchange", function() { goToAnchor(); });
+
+            });
+        });
+    </script>
+    <script src="/static/ccbv.js"></script>
+
+</body>
+</html>

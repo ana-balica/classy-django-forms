@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Django 2.0 -- Classy Django Forms</title>
+    <meta name="description" content="Detailed descriptions, with full methods, properties and attributes of each Django forms class.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://cdf.9vo.lt/static/favicon.ico"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles from Twitter Bootstrap-->
+    <link href="http://cdf.9vo.lt/static/bootstrap.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/style.css" rel="stylesheet">
+    <link href="http://cdf.9vo.lt/static/manni.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://cdf.9vo.lt/static/jquery-1.7.1.min.js"><\/script>');</script>
+    <script src="http://cdf.9vo.lt/static/bootstrap-collapse.js"></script>
+    <script src="http://cdf.9vo.lt/static/modernizr-2.5.3.min.js"></script>
+    <script src="http://cdf.9vo.lt/static/bootstrap-dropdowns.js"></script>
+    <script>$('.dropdown-toggle').dropdown()</script>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106634847-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106634847-1');
+    </script>
+
+    
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">cdf</a>
+                <ul class="nav">
+
+                
+
+                <li li="version-2.0" class="dropdown">
+                    
+                        <a href="#version-2.0" class="dropdown-toggle" data-toggle="dropdown">
+                            Django 2.0 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.11/index.html">1.11</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.10/index.html">1.10</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.9/index.html">1.9</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://cdf.9vo.lt/1.8/index.html">1.8</a>
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+
+                <li class="divider-vertical"></li>
+                
+                    
+                        
+                        
+                        <li id="module-boundfield" class="dropdown">
+                            <a href="#module-boundfield" class="dropdown-toggle" data-toggle="dropdown">
+                                Boundfield <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.boundfield/BoundField.html">BoundField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-fields" class="dropdown">
+                            <a href="#module-fields" class="dropdown-toggle" data-toggle="dropdown">
+                                Fields <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/BooleanField.html">BooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/CharField.html">CharField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/ChoiceField.html">ChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/ComboField.html">ComboField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/DateField.html">DateField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/DateTimeField.html">DateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/DecimalField.html">DecimalField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/DurationField.html">DurationField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/EmailField.html">EmailField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/Field.html">Field</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/FileField.html">FileField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/FilePathField.html">FilePathField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/FloatField.html">FloatField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/GenericIPAddressField.html">GenericIPAddressField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/ImageField.html">ImageField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/IntegerField.html">IntegerField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/MultiValueField.html">MultiValueField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/MultipleChoiceField.html">MultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/NullBooleanField.html">NullBooleanField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/RegexField.html">RegexField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/SlugField.html">SlugField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/SplitDateTimeField.html">SplitDateTimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/TimeField.html">TimeField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/TypedChoiceField.html">TypedChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/TypedMultipleChoiceField.html">TypedMultipleChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/URLField.html">URLField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.fields/UUIDField.html">UUIDField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-forms" class="dropdown">
+                            <a href="#module-forms" class="dropdown-toggle" data-toggle="dropdown">
+                                Forms <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.forms/BaseForm.html">BaseForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.forms/Form.html">Form</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-formsets" class="dropdown">
+                            <a href="#module-formsets" class="dropdown-toggle" data-toggle="dropdown">
+                                Formsets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.formsets/BaseFormSet.html">BaseFormSet</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-models" class="dropdown">
+                            <a href="#module-models" class="dropdown-toggle" data-toggle="dropdown">
+                                Models <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.models/BaseInlineFormSet.html">BaseInlineFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.models/BaseModelForm.html">BaseModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.models/BaseModelFormSet.html">BaseModelFormSet</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.models/ModelChoiceField.html">ModelChoiceField</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.models/ModelForm.html">ModelForm</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.models/ModelMultipleChoiceField.html">ModelMultipleChoiceField</a>
+                        </li>
+                    
+                    
+                
+                    
+                        </ul></li>
+                        
+                        <li id="module-widgets" class="dropdown">
+                            <a href="#module-widgets" class="dropdown-toggle" data-toggle="dropdown">
+                                Widgets <b class="caret"></b>
+                            </a>
+                        <ul class="dropdown-menu">
+                    
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/CheckboxInput.html">CheckboxInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/CheckboxSelectMultiple.html">CheckboxSelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/ClearableFileInput.html">ClearableFileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/DateInput.html">DateInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/DateTimeInput.html">DateTimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/EmailInput.html">EmailInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/FileInput.html">FileInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/HiddenInput.html">HiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/Media.html">Media</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/MediaDefiningClass.html">MediaDefiningClass</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/MultiWidget.html">MultiWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/MultipleHiddenInput.html">MultipleHiddenInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/NullBooleanSelect.html">NullBooleanSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/NumberInput.html">NumberInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/PasswordInput.html">PasswordInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/RadioSelect.html">RadioSelect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/Select.html">Select</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/SelectDateWidget.html">SelectDateWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/SelectMultiple.html">SelectMultiple</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/SplitDateTimeWidget.html">SplitDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/SplitHiddenDateTimeWidget.html">SplitHiddenDateTimeWidget</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/TextInput.html">TextInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/Textarea.html">Textarea</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/TimeInput.html">TimeInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/URLInput.html">URLInput</a>
+                        </li>
+                    
+                        <li >
+                            <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/Widget.html">Widget</a>
+                        </li>
+                    
+                    
+                
+                </ul></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <article id="main">
+            
+            <div class="row">
+    <div class="span12">
+        <h1>Django 2.0</h1>
+        <div class="row">
+            
+                <div class="span6">
+    
+        
+            
+            
+            
+            <div class="well skinny klass-list">
+            <ul class="nav nav-list">
+            <li class="nav-header"><h3>boundfield</h3></li>
+            
+        
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.boundfield/BoundField.html" class="klass-tooltip" data-original-title="A Field plus data" data-placement="bottom">
+                    BoundField
+                </a>
+            </li>
+        
+    
+        
+            </ul></div>
+            
+            
+            <div class="well skinny klass-list">
+            <ul class="nav nav-list">
+            <li class="nav-header"><h3>fields</h3></li>
+            
+        
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/BooleanField.html" >
+                    BooleanField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/CharField.html" >
+                    CharField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/ChoiceField.html" >
+                    ChoiceField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/ComboField.html" class="klass-tooltip" data-original-title="A Field whose clean() method calls multiple Field clean() methods." data-placement="bottom">
+                    ComboField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/DateField.html" >
+                    DateField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/DateTimeField.html" >
+                    DateTimeField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/DecimalField.html" >
+                    DecimalField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/DurationField.html" >
+                    DurationField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/EmailField.html" >
+                    EmailField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/Field.html" >
+                    Field
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/FileField.html" >
+                    FileField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/FilePathField.html" >
+                    FilePathField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/FloatField.html" >
+                    FloatField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/GenericIPAddressField.html" >
+                    GenericIPAddressField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/ImageField.html" >
+                    ImageField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/IntegerField.html" >
+                    IntegerField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/MultiValueField.html" class="klass-tooltip" data-original-title="Aggregate the logic of multiple Fields.
+
+    Its clean() method takes a &#34;decompressed&#34; list of values, which are then
+    cleaned into a single value according to self.fields. Each value in
+    this list is cleaned by the corresponding field -- the first value is
+    cleaned by the first field, the second value is cleaned by the second
+    field, etc. Once all fields are cleaned, the list of clean values is
+    &#34;compressed&#34; into a single value.
+
+    Subclasses should not have to implement clean(). Instead, they must
+    implement compress(), which takes a list of valid values and returns a
+    &#34;compressed&#34; version of those values -- a single value.
+
+    You&#39;ll probably want to use this with MultiWidget." data-placement="bottom">
+                    MultiValueField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/MultipleChoiceField.html" >
+                    MultipleChoiceField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/NullBooleanField.html" class="klass-tooltip" data-original-title="A field whose valid values are None, True, and False. Clean invalid values
+    to None." data-placement="bottom">
+                    NullBooleanField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/RegexField.html" >
+                    RegexField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/SlugField.html" >
+                    SlugField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/SplitDateTimeField.html" >
+                    SplitDateTimeField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/TimeField.html" >
+                    TimeField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/TypedChoiceField.html" >
+                    TypedChoiceField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/TypedMultipleChoiceField.html" >
+                    TypedMultipleChoiceField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/URLField.html" >
+                    URLField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.fields/UUIDField.html" >
+                    UUIDField
+                </a>
+            </li>
+        
+    
+        
+            </ul></div>
+            
+            
+            <div class="well skinny klass-list">
+            <ul class="nav nav-list">
+            <li class="nav-header"><h3>forms</h3></li>
+            
+        
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.forms/BaseForm.html" class="klass-tooltip" data-original-title="The main implementation of all the Form logic. Note that this class is
+    different than Form. See the comments by the Form class for more info. Any
+    improvements to the form API should be made to this class, not to the Form
+    class." data-placement="bottom">
+                    BaseForm
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.forms/Form.html" class="klass-tooltip" data-original-title="A collection of Fields, plus their associated data." data-placement="bottom">
+                    Form
+                </a>
+            </li>
+        
+    
+        
+            </ul></div>
+            
+            </div><div class="span6">
+            <div class="well skinny klass-list">
+            <ul class="nav nav-list">
+            <li class="nav-header"><h3>formsets</h3></li>
+            
+        
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.formsets/BaseFormSet.html" class="klass-tooltip" data-original-title="A collection of instances of the same Form class." data-placement="bottom">
+                    BaseFormSet
+                </a>
+            </li>
+        
+    
+        
+            </ul></div>
+            
+            
+            <div class="well skinny klass-list">
+            <ul class="nav nav-list">
+            <li class="nav-header"><h3>models</h3></li>
+            
+        
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.models/BaseInlineFormSet.html" class="klass-tooltip" data-original-title="A formset for child objects related to a parent." data-placement="bottom">
+                    BaseInlineFormSet
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.models/BaseModelForm.html" >
+                    BaseModelForm
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.models/BaseModelFormSet.html" class="klass-tooltip" data-original-title="A ``FormSet`` for editing a queryset and/or adding new objects to it." data-placement="bottom">
+                    BaseModelFormSet
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.models/ModelChoiceField.html" class="klass-tooltip" data-original-title="A ChoiceField whose choices are a model QuerySet." data-placement="bottom">
+                    ModelChoiceField
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.models/ModelForm.html" >
+                    ModelForm
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.models/ModelMultipleChoiceField.html" class="klass-tooltip" data-original-title="A MultipleChoiceField whose choices are a model QuerySet." data-placement="bottom">
+                    ModelMultipleChoiceField
+                </a>
+            </li>
+        
+    
+        
+            </ul></div>
+            
+            
+            <div class="well skinny klass-list">
+            <ul class="nav nav-list">
+            <li class="nav-header"><h3>widgets</h3></li>
+            
+        
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/CheckboxInput.html" >
+                    CheckboxInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/CheckboxSelectMultiple.html" >
+                    CheckboxSelectMultiple
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/ClearableFileInput.html" >
+                    ClearableFileInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/DateInput.html" >
+                    DateInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/DateTimeInput.html" >
+                    DateTimeInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/EmailInput.html" >
+                    EmailInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/FileInput.html" >
+                    FileInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/HiddenInput.html" >
+                    HiddenInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/Media.html" >
+                    Media
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/MediaDefiningClass.html" class="klass-tooltip" data-original-title="Metaclass for classes that can have media definitions." data-placement="bottom">
+                    MediaDefiningClass
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/MultiWidget.html" class="klass-tooltip" data-original-title="A widget that is composed of multiple widgets.
+
+    In addition to the values added by Widget.get_context(), this widget
+    adds a list of subwidgets to the context as widget[&#39;subwidgets&#39;].
+    These can be looped over and rendered like normal widgets.
+
+    You&#39;ll probably want to use this class with MultiValueField." data-placement="bottom">
+                    MultiWidget
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/MultipleHiddenInput.html" class="klass-tooltip" data-original-title="Handle &lt;input type=&#34;hidden&#34;&gt; for fields that have a list
+    of values." data-placement="bottom">
+                    MultipleHiddenInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/NullBooleanSelect.html" class="klass-tooltip" data-original-title="A Select Widget intended to be used with NullBooleanField." data-placement="bottom">
+                    NullBooleanSelect
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/NumberInput.html" >
+                    NumberInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/PasswordInput.html" >
+                    PasswordInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/RadioSelect.html" >
+                    RadioSelect
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/Select.html" >
+                    Select
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/SelectDateWidget.html" class="klass-tooltip" data-original-title="A widget that splits date input into three &lt;select&gt; boxes.
+
+    This also serves as an example of a Widget that has more than one HTML
+    element and hence implements value_from_datadict." data-placement="bottom">
+                    SelectDateWidget
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/SelectMultiple.html" >
+                    SelectMultiple
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/SplitDateTimeWidget.html" class="klass-tooltip" data-original-title="A widget that splits datetime input into two &lt;input type=&#34;text&#34;&gt; boxes." data-placement="bottom">
+                    SplitDateTimeWidget
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/SplitHiddenDateTimeWidget.html" class="klass-tooltip" data-original-title="A widget that splits datetime input into two &lt;input type=&#34;hidden&#34;&gt; inputs." data-placement="bottom">
+                    SplitHiddenDateTimeWidget
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/TextInput.html" >
+                    TextInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/Textarea.html" >
+                    Textarea
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/TimeInput.html" >
+                    TimeInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/URLInput.html" >
+                    URLInput
+                </a>
+            </li>
+        
+            <li class="primary">
+                <a href="http://cdf.9vo.lt/2.0/django.forms.widgets/Widget.html" >
+                    Widget
+                </a>
+            </li>
+        
+    
+</ul></div>
+</div>
+            
+        </div>
+    </div>
+</div>
+        </article>
+        
+            <footer>
+                <hr />
+                <p>Built by <a href="http://twitter.com/anabalica" target="_blank">@anabalica</a>.</p>
+
+                <p><a href="http://github.com/ana-balica/classy-django-forms/">Source code</a> on <a href="http://github.com/">GitHub</a>.</p>
+
+                <p>Based on <a href="http://ccbv.co.uk/">Django Classy Class-Based Views</a> and <a href="http://www.cdrf.co/">Classy Django Rest Framework</a>.</p>
+            </footer>
+        
+    </div> <!-- /container -->
+    <script type="text/javascript">$('.dropdown-toggle').dropdown()</script>
+    
+    <script src="/static/ccbv.js"></script>
+    <script src="/static/bootstrap-tooltip.js"></script>
+    <script>
+        $( function (){
+            CCBV.klass_list.hide_secondary();
+            $('#klass-buttons').show();
+            $('#klass-buttons #toggle-secondary-klasses').click(function () {
+                var button = $(this);
+                CCBV.klass_list.toggle_secondary().promise().done(function () {
+                    if ($(this).css('display') == 'none') {
+                        button.text('Show more');
+                    } else {
+                        button.text('Show less');
+                    }
+                });
+            });
+            $('.klass-tooltip').tooltip();
+        })
+    </script>
+
+</body>
+</html>
