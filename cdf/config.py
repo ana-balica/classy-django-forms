@@ -4,6 +4,9 @@ from cdf.utils import get_major_dot_minor_version
 
 
 DJANGO_VERSIONS = [
+    '3.0',
+    '2.2',
+    '2.1',
     '2.0',
     '1.11',
     '1.10',
