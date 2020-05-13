@@ -13,16 +13,16 @@ clean:
 
 .PHONY=collect_static
 collect_static:
-	@echo "Collecting static..."
 	@cp -r static $(PUBLIC_FOLDER)/
+	@echo "Collecting static done."
 
 .PHONY=index_generator_for_version
 generate_index_for_version:
-	@./bin/generate_index.py
+	@./src/generate_index.py
 
 .PHONY=build_for_version
 build_for_version:
-	@./bin/compile_static.py
+	@./src/compile_static.py
 
 build_local:
 	@make clean
