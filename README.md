@@ -6,6 +6,8 @@ Classy Django Forms is an API inspector of classes available in Django forms mod
 
 Requires Python 3.
 
+`$ virtualenv venv && source venv/bin/activate`
+
 `$ pip install -r requirements.txt`
 
 `$ make build`
@@ -18,8 +20,8 @@ To run locally:
 
 This project generates a static website (see `public` folder). This is achieved using 2 scripts:
 
-* `bin/generate_index.py` - pulls all the public classses from Django forms module and saved them as a JSON file (see `klasses.json`)
-* `bin/compile_static.py` - gets the data from the JSON file and renders pages with all the class info
+* `src/generate_index.py` - pulls all the public classses from Django forms module and saved them as a JSON file (see `klasses.json`)
+* `src/compile_static.py` - gets the data from the JSON file and renders pages with all the class info
 
 These 2 scripts are called for each tox environment. Tox is used to create multiple virtual environments each with a different version of Django.
 
