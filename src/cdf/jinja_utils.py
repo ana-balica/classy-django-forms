@@ -2,7 +2,7 @@ import inspect
 import os
 
 from jinja2 import (
-    contextfunction,
+    pass_context,
     select_autoescape,
     Environment,
     FileSystemLoader,
@@ -18,26 +18,26 @@ template_env = Environment(
 )
 
 
-@contextfunction
+@pass_context
 def get_klass_url(context, klass, version=VERSION):
     return os.path.join(BASE_URL, version, klass.__module__, klass.__name__ + '.html')
 
 
-@contextfunction
+@pass_context
 def get_version_url(context, version):
     if 'this_klass' in context:
         return get_klass_url(context, context['this_klass'], version)
     return os.path.join(BASE_URL, version, 'index.html')
 
 
-@contextfunction
+@pass_context
 def get_klass_docs(context, klass):
     if klass.__doc__ and klass.__doc__.strip():
         return klass.__doc__.strip()
     return ''
 
 
-@contextfunction
+@pass_context
 def get_doc_link(context, klass, version=VERSION):
     base_url = 'https://docs.djangoproject.com/en/{version}/ref/forms/{module}/#{klass}'
     return base_url.format(
@@ -47,7 +47,7 @@ def get_doc_link(context, klass, version=VERSION):
     )
 
 
-@contextfunction
+@pass_context
 def get_src_link(context, klass, version=VERSION):
     src_url = "https://github.com/django/django/blob/stable/{version}.x/django/forms/{module}.py#L{lineno}"
     local_path = inspect.getsourcefile(klass)
