@@ -11,6 +11,13 @@ from pygments.lexers import PythonLexer
 from cdf.custom_formatter import CodeHtmlFormatter
 
 
+try:
+    # MutableSequence was moved to collections.abc in Python 3.10
+    MutableSequence = collections.MutableSequence
+except AttributeError:
+    MutableSequence = collections.abc.MutableSequence
+
+
 def get_klasses():
     """
     Get all the public classes from the Django modules of interest within forms.
@@ -119,7 +126,7 @@ class Property:
         return highlight(code, PythonLexer(), CodeHtmlFormatter(self.instance_class))
 
 
-class KlassItems(collections.MutableSequence):
+class KlassItems(MutableSequence):
 
     def __init__(self):
         self.items = []
