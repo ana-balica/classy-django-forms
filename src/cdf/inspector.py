@@ -1,8 +1,8 @@
-import collections
 import inspect
 import json
 import types
 from collections import namedtuple
+from typing import MutableSequence
 
 from django import forms
 from pygments import highlight
@@ -119,7 +119,7 @@ class Property:
         return highlight(code, PythonLexer(), CodeHtmlFormatter(self.instance_class))
 
 
-class KlassItems(collections.MutableSequence):
+class KlassItems(MutableSequence):
 
     def __init__(self):
         self.items = []
